@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="w-full min-h-screen App bg-light max-w-7xl">
+    <div className="w-full min-h-screen App bg-dark max-w-7xl">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />

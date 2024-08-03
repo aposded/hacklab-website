@@ -9,14 +9,14 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <div className="w-full min-h-screen App bg-light">
+    <div className="w-full min-h-screen App bg-light max-w-7xl">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Apply />} />
+          {/* <Route path="/projects" element={<Projects />} /> */}
+          {/* <Route path="/events" element={<Events />} /> */}
+          <Route path="/" element={<Apply />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

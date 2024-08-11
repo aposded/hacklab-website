@@ -1,8 +1,9 @@
 import React from 'react'
+import classNames from 'classnames'
 
-export default function Heading({children}) {
+export default function Heading({children,className}) {
 
     return (
-        <h1 className=''>{children}</h1>
+        <h1 className={classNames('px-0 text-2xl font-bold lg:text-4xl text-light',className)}>{children}</h1>
     )
 }

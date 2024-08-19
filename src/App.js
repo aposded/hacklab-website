@@ -3,21 +3,22 @@ import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Events from "./pages/Events";
-import Apply from "./pages/Apply";
 import NotFound from "./pages/NotFound";
+import Main from "./layouts/Main";
+import Team from "./pages/Team";
 
 function App() {
   return (
-    <div className="w-full min-h-screen mx-auto App max-w-7xl">
+    <div className="w-full min-h-screen mx-auto App bg-dark">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
-          {/* <Route path="/events" element={<Events />} /> */}
-          <Route path="/" element={<Apply />} />
-          <Route path="*" element={<NotFound />} />
+        <Routes >
+          <Route element={<Main />} >
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>

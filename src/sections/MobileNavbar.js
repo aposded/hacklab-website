@@ -20,7 +20,7 @@ export default function MobileNavbar() {
                 <MenuLink to='/'>Home</MenuLink>
                 <MenuLink to='/about'>About</MenuLink>
                 <MenuLink to='/projects'>Projects</MenuLink>
-                <MenuLink to='/team'>The Team</MenuLink>
+                <MenuLink to='/team'>Our Team</MenuLink>
                 <SecondaryButton >Apply</SecondaryButton>
             </div>}
 

@@ -21,7 +21,7 @@ export default function Team() {
         {name: 'Albert Loog',role: 'Co-Head of Events',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Giulio Conti',role: 'Co-Head of Digital',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Beatrice Banciamore',role: 'Co-Head of Digital',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Matteo',role: 'Digital',image: icon,linkedin: '',department: 'The Board'},
+        {name: 'Matteo Mercuri',role: 'Digital',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Lorenzo Faella',role: 'Digital',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Carlo Maria Calvanico',role: 'Outreach',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',image: icon,linkedin: '',department: 'Mentors'},

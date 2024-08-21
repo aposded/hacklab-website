@@ -1,5 +1,5 @@
 [build]
     base = "/"
     publish = "build/"
-    command = "npm run build && npx tailwindcss -o build.css --minify"
+    command = "CI=false && npm run build && npx tailwindcss -o build.css --minify"
     

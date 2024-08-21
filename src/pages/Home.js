@@ -12,13 +12,44 @@ import MobileNavbar from '../sections/MobileNavbar'
 import Subhero from '../sections/Subhero'
 import logo from '../assets/logo.png'
 import Hero from '../sections/Hero'
+import nightImage from '../assets/night.webp'
+import sdaImage from '../assets/sda.jpg'
+import isolaImage from '../assets/isola.jpg'
+import Icon from '../components/Text/Icon'
 
 export default function Home() {
 
     return (
         <div>
             <Hero></Hero>
-            <Subhero>
+            <div style={{
+                placeItems: 'start center'
+            }} className='grid w-full grid-cols-1 gap-6 my-12 lg:grid-cols-3 '>
+                <div className='flex flex-col items-center justify-center w-4/5 gap-6'>
+                    <div className='flex items-center justify-center w-24 h-24 rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
+                        <Icon icon='code' className='text-6xl text-dark' />
+                    </div>
+                    <Heading>Code</Heading>
+                    <Text className='text-center'>Develop hands-on skills in innovation and entrepreneurship.</Text>
+                </div>
+                <div className='flex flex-col items-center justify-center w-4/5 gap-6'>
+                    <div className='flex items-center justify-center w-24 h-24 rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
+                        <Icon icon='people-fill' className='text-5xl text-dark' />
+                    </div>
+                    <Heading>Connect</Heading>
+                    <Text className='text-center'>Collaborate with peers, mentors, and industry professionals.</Text>
+                </div>
+                <div className='flex flex-col items-center justify-center w-4/5 gap-6'>
+                    <div className='flex items-center justify-center w-24 h-24 rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
+                        <Icon icon='rocket-takeoff-fill' className='mt-1 text-5xl mr-0.5 text-dark' />
+                    </div>
+                    <Heading>Create</Heading>
+                    <Text className='text-center'>
+                        Showcase your work and present your prototype to a panel of judges.
+                    </Text>
+                </div>
+            </div>
+            <Subhero image={sdaImage}>
                 <Subheading>What is the Hacklab?</Subheading>
                 <Text className='mt-2'>
                     HackLab is a student-driven innovation hub at Bocconi. We bring together students from technical and business backgrounds to:
@@ -28,10 +59,12 @@ export default function Home() {
                     <li>Develop prototypes over a semester</li>
                     <li>Collaborate in diverse, interdisciplinary teams</li>
                 </Ul>
-                <Text className='mt-4'>Join us to turn ideas into impactful solutions!</Text>
-                <PrimaryButton className='mt-4'>Apply Now</PrimaryButton>
+                <Text className='mt-4 text-center'>Join us to turn ideas into impactful solutions!</Text>
+                <div className='flex items-center justify-center w-full'>
+                    <PrimaryButton className='mx-auto mt-4'>Apply Now</PrimaryButton>
+                </div>
             </Subhero>
-            <Subhero reverse>
+            <Subhero reverse image={isolaImage}>
                 <Subheading>Why should I join the Hacklab?</Subheading>
                 <Text className='mt-2'>Unlock unique opportunities:</Text>
                 <Ul className='mt-4 text-lg'>
@@ -41,7 +74,7 @@ export default function Home() {
                     <li><span className='font-semibold'>Showcase Your Work</span>: Present your prototype to a panel of judges.</li>
                 </Ul>
             </Subhero>
-            <Subhero >
+            <Subhero image={nightImage} >
                 <Subheading>What will I do as a member of the HackLab?</Subheading>
                 <Ul className='mt-4 text-lg'>
                     <li><span className='font-semibold'>Tackle a real-world challenge</span>: Work on a meaningful problem relevant to current industry or societal needs.</li>
@@ -51,10 +84,10 @@ export default function Home() {
                     <li><span className='font-semibold'>Access workshops and mentorship</span>: Receive guidance and support through specialized workshops and expert mentors.</li>
                 </Ul>
             </Subhero>
-            <div className='py-8 pt-32 bg-dark text-light'>
+            <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
                 <div className='container flex flex-col items-center justify-center mx-auto'>
                     <Heading className='text-center'>Ready to join the Hacklab?</Heading>
-                    <Text className='mt-4'>Applications are now open for the Fall 2024 semester.</Text>
+                    <Text className='mt-4 text-center'>Applications are now open for the Fall 2024 semester.</Text>
                     <PrimaryButton className='mt-4'>Apply Now</PrimaryButton>
                 </div>
             </div>

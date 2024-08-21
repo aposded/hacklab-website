@@ -17,14 +17,16 @@ import PrimaryButton from '../components/Buttons/PrimaryButton'
 
 export default function Subhero({image,children,reverse}) {
     return (
-        <div className={'flex flex-col items-start justify-center w-full gap-12 mt-8 '+(reverse? 'flex-col-reverse lg:flex-row-reverse':' flex-col lg:flex-row')}>
+        <div className={'flex flex-col items-center justify-center py-8 w-full gap-12 mt-8 '+(reverse? 'flex-col lg:flex-row-reverse':' flex-col lg:flex-row')}>
             <div className='w-full lg:w-1/2'>
-                <div className='w-4/5 mx-auto rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
-                    <img src={image} alt='decorative' className='object-contain aspect-square' />
+                <div className='w-4/5 mx-auto mb-8 rounded-full bg-dark-200 bg-opacity-20 aspect-square lg:mb-0'>
+                    <img src={image} alt='decorative' className='object-cover p-8 rounded-full aspect-square' />
                 </div>
             </div>
-            <div className='w-full px-8 mt-8 lg:w-1/2 text-light'>
-                {children}
+            <div className='flex items-center justify-center w-full px-1 -mt-8 h-max lg:w-1/2'>
+                <div className='w-full px-8 text-light'>
+                    {children}
+                </div>
             </div>
         </div>
     )

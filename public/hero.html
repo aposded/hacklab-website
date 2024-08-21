@@ -2,7 +2,8 @@
 <html lang="en">
   <style>
     html {
-      background-color: rbga(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0);
+      width: 100%;
     }
     .one {
       overflow: hidden;
@@ -36,7 +37,10 @@
         margin-top: 10px;
       }
       .hide-box {
-        display: block;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
         overflow: hidden;
       }
@@ -48,18 +52,14 @@
       <div class="">
         <div class="">
           <div class="hide-box">
-            <h1 class="hide">the</h1>
-            <h1 class="hide">Hack</h1>
-            <h1 class="hide">Lab</h1>
-            <h1 class="hide"></h1>
+            <img src="/logo.png" alt="logo" style="width: 200px" />
           </div>
           <div class="one">
             <div class="canvas-container">
               <canvas
                 id="canvas1"
-                width="1000"
                 height="700"
-                style="position: fixed"></canvas>
+                style="position: fixed; width: 100%"></canvas>
             </div>
           </div>
         </div>
@@ -70,8 +70,8 @@
   <script>
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
-    canvas.width = 1000;
-    canvas.height = 700;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
     let particleArray = [];
 
     let mouse = {

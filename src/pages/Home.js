@@ -51,6 +51,13 @@ export default function Home() {
                     <li><span className='font-semibold'>Access workshops and mentorship</span>: Receive guidance and support through specialized workshops and expert mentors.</li>
                 </Ul>
             </Subhero>
+            <div className='py-8 pt-32 bg-dark text-light'>
+                <div className='container flex flex-col items-center justify-center mx-auto'>
+                    <Heading className='text-center'>Ready to join the Hacklab?</Heading>
+                    <Text className='mt-4'>Applications are now open for the Fall 2024 semester.</Text>
+                    <PrimaryButton className='mt-4'>Apply Now</PrimaryButton>
+                </div>
+            </div>
         </div>
     )
 }

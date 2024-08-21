@@ -3,6 +3,7 @@ import Heading from '../components/Text/Heading'
 import Text from '../components/Text/Text'
 import Ul from '../components/Lists/Ul'
 import Subheading from '../components/Text/Subheading'
+import PrimaryButton from '../components/Buttons/PrimaryButton'
 
 export default function About() {
     return (
@@ -22,7 +23,13 @@ export default function About() {
 
                 <li><span className='font-semibold'>Talks and Conferences</span>: We organize talks, interviews, and conferences featuring industry experts, external professors, and company representatives. These events are open to all Bocconi students and provide insights to the challenge of each semester.</li>
             </Ul>
-
+            <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
+                <div className='container flex flex-col items-center justify-center mx-auto'>
+                    <Heading className='text-center'>Ready to join the Hacklab?</Heading>
+                    <Text className='mt-4 text-center'>Applications are now open for the Fall 2024 semester.</Text>
+                    <PrimaryButton className='mt-4'>Apply Now</PrimaryButton>
+                </div>
+            </div>
 
         </div>
     )

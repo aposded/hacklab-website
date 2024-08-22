@@ -9,28 +9,27 @@ import Icon from '../components/Text/Icon'
 export default function Team() {
 
     const teamMembers=[
-        {name: 'Davide Bacchini',image: icon,role: 'President',linkedin: '',department: 'The Board'},
-        {name: 'Alessandro Di Bernardo',role: 'Vice President',image: icon,linkedin: '',department: 'The Board'},
+        {name: 'Davide Bacchini',image: icon,role: 'President',linkedin: 'https://www.linkedin.com/in/davide-bacchini',department: 'The Board'},
+        {name: 'Alessandro Di Bernardo',role: 'Vice President',image: icon,linkedin: 'https://www.linkedin.com/in/alessandro-di-bernardo-9a7b15294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Riccardo Scibetta',role: 'Strategic Advisor',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Francesco Arconte',role: 'Strategic Advisor',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',role: 'Co-Head of IT & Mentors',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Danilo Scholz',role: 'Co-Head of IT & Mentors',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Alessandro Ferraiolo',role: 'Head of Projects',image: icon,linkedin: '',department: 'The Board'},
+        {name: 'Alessandro Ferraiolo',role: 'Head of Projects',image: icon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'The Board'},
         {name: 'Giacomo Cordella',role: 'Head of HR',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Damir Maksut',role: 'Co-Head of Events',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Albert Loog',role: 'Co-Head of Events',image: icon,linkedin: '',department: 'The Board'},
+        {name: 'Damir Maksut',role: 'Co-Head of Events',image: icon,linkedin: 'https://www.linkedin.com/in/damir-maksut-a485871b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
+        {name: 'Albert Loog',role: 'Co-Head of Events',image: icon,linkedin: 'https://www.linkedin.com/in/albertloog?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Giulio Conti',role: 'Co-Head of Digital',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Beatrice Banciamore',role: 'Co-Head of Digital',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Matteo Mercuri',role: 'Digital',image: icon,linkedin: '',department: 'The Board'},
+        {name: 'Beatrice Branciamore',role: 'Co-Head of Digital',image: icon,linkedin: 'https://www.linkedin.com/in/beatrice-branciamore-262353289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
+        {name: 'Matteo Mercuri',role: 'Digital',image: icon,linkedin: 'https://www.linkedin.com/in/matteo-mercuri-0b32a928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Lorenzo Faella',role: 'Digital',image: icon,linkedin: '',department: 'The Board'},
-        {name: 'Carlo Maria Calvanico',role: 'Outreach',image: icon,linkedin: '',department: 'The Board'},
+        {name: 'Carlo Maria Calvanico',role: 'Head of Outreach',image: icon,linkedin: '',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',image: icon,linkedin: '',department: 'Mentors'},
         {name: 'Danilo Scholz',image: icon,linkedin: '',department: 'Mentors'},
         {name: 'Giacomo Cordella',image: icon,linkedin: '',department: 'Mentors'},
-        {name: 'Damir Maksut',image: icon,linkedin: '',department: 'Mentors'},
-        {name: 'Alessandro Ferraiolo',image: icon,linkedin: '',department: 'Mentors'},
+        {name: 'Damir Maksut',image: icon,linkedin: 'https://www.linkedin.com/in/damir-maksut-a485871b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'Mentors'},
+        {name: 'Alessandro Ferraiolo',image: icon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'Mentors'},
         {name: 'Andrea Bonarrigo',image: icon,linkedin: '',department: 'Mentors'},
-
     ]
 
     const departments=['The Board','Mentors']

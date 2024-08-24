@@ -4,8 +4,12 @@ import Text from '../components/Text/Text'
 import Ul from '../components/Lists/Ul'
 import Subheading from '../components/Text/Subheading'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
+import {useApply} from '../hooks/useApply'
 
 export default function About() {
+    const {handleApply}=useApply()
+
+
     return (
         <div className='max-w-4xl mx-auto text-justify'>
             <Heading className='w-full py-12 text-center'>About Us</Heading>
@@ -27,7 +31,7 @@ export default function About() {
                 <div className='container flex flex-col items-center justify-center mx-auto'>
                     <Heading className='text-center'>Ready to join the Hacklab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Fall 2024 semester.</Text>
-                    <PrimaryButton className='mt-4'>Apply Now</PrimaryButton>
+                    <PrimaryButton onClick={handleApply} className='mt-4'>Apply Now</PrimaryButton>
                 </div>
             </div>
 

@@ -16,8 +16,10 @@ import nightImage from '../assets/night.webp'
 import sdaImage from '../assets/sda.jpg'
 import isolaImage from '../assets/isola.jpg'
 import Icon from '../components/Text/Icon'
+import {useApply} from '../hooks/useApply'
 
 export default function Home() {
+    const {handleApply}=useApply()
 
     return (
         <div>
@@ -61,7 +63,7 @@ export default function Home() {
                 </Ul>
                 <Text className='mt-4 text-center'>Join us to turn ideas into impactful solutions!</Text>
                 <div className='flex items-center justify-center w-full'>
-                    <PrimaryButton className='mx-auto mt-4'>Apply Now</PrimaryButton>
+                    <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Apply Now</PrimaryButton>
                 </div>
             </Subhero>
             <Subhero reverse image={isolaImage}>
@@ -88,7 +90,7 @@ export default function Home() {
                 <div className='container flex flex-col items-center justify-center mx-auto'>
                     <Heading className='text-center'>Ready to join the Hacklab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Fall 2024 semester.</Text>
-                    <PrimaryButton className='mt-4'>Apply Now</PrimaryButton>
+                    <PrimaryButton onClick={handleApply} className='mt-4'>Apply Now</PrimaryButton>
                 </div>
             </div>
         </div>

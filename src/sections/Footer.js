@@ -4,8 +4,11 @@ import Icon from '../components/Text/Icon'
 import Link from '../components/Links/Link'
 import SecondaryButton from '../components/Buttons/SecondaryButton'
 import MenuLink from '../components/Links/MenuLink'
+import {useApply} from '../hooks/useApply'
 
 export default function Footer() {
+    const {handleApply}=useApply()
+
     return (
         <div className='flex items-center justify-between w-full px-4 py-4 mt-8'>
             <div className='flex gap-4'>
@@ -19,7 +22,7 @@ export default function Footer() {
                     <MenuLink to='/about'>About</MenuLink>
                     <MenuLink to='/projects'>Projects</MenuLink>
                     <MenuLink to='/team'>Our Team</MenuLink>
-                    <SecondaryButton>Apply</SecondaryButton>
+                    <SecondaryButton onClick={handleApply}>Apply</SecondaryButton>
                 </div>
                 <div className='flex items-center justify-end gap-4 mt-4'>
                     <Link to='https://www.instagram.com/the.hack.lab/'><Icon icon='instagram' /></Link>

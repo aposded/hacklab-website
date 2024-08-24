@@ -4,9 +4,11 @@ import SecondaryButton from '../components/Buttons/SecondaryButton'
 import Link from '../components/Links/Link'
 import Icon from '../components/Text/Icon'
 import MenuLink from '../components/Links/MenuLink'
+import {useApply} from '../hooks/useApply'
 
 export default function MobileNavbar() {
     const [expanded,setExpanded]=useState(false)
+    const {handleApply}=useApply()
 
     return (
         <>
@@ -21,7 +23,7 @@ export default function MobileNavbar() {
                 <MenuLink to='/about'>About</MenuLink>
                 <MenuLink to='/projects'>Projects</MenuLink>
                 <MenuLink to='/team'>Our Team</MenuLink>
-                <SecondaryButton >Apply</SecondaryButton>
+                <SecondaryButton onClick={handleApply}>Apply</SecondaryButton>
             </div>}
 
         </>

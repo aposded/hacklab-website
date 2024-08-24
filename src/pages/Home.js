@@ -61,7 +61,7 @@ export default function Home() {
                     <li>Develop prototypes over a semester</li>
                     <li>Collaborate in diverse, interdisciplinary teams</li>
                 </Ul>
-                <Text className='mt-4 text-center'>Join us to turn ideas into impactful solutions!</Text>
+                <Text className='mt-4 text-center lg:mt-16'>Join us to turn ideas into impactful solutions!</Text>
                 <div className='flex items-center justify-center w-full'>
                     <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Apply Now</PrimaryButton>
                 </div>

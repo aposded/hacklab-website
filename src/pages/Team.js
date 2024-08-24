@@ -49,17 +49,17 @@ export default function Team() {
     return (
         <div>
             <Heading className='w-full !py-12 text-center'>Our team</Heading>
-            <div className='grid w-full grid-cols-4 gap-12'>
+            <div style={{placeItems: 'start center'}} className='grid w-full grid-cols-2 gap-12 lg:grid-cols-4'>
                 {departments.map(department => (
-                    <><Subheading className='col-span-4 py-6 text-2xl text-left lg:text-3xl'>{department}</Subheading>
+                    <><Subheading className='col-span-2 py-6 text-2xl text-left lg:col-span-4 lg:text-3xl'>{department}</Subheading>
                         {teamMembers.map(member => (member.department===department&&
                             <div className='flex flex-col items-center justify-center gap-0'>
-                                <div className='relative w-48 h-48'>
-                                    {member.linkedin&&<Link className='absolute bottom-0 right-4' to={member.linkedin}><Icon icon='linkedin' className='text-3xl' /></Link>}
-                                    <img src={member.image} alt='profile' className='w-48 h-48 rounded-full' />
+                                <div className='relative w-32 h-32 lg:w-48 lg:h-48'>
+                                    {member.linkedin&&<Link className='absolute bottom-0 right-1 lg:right-4' to={member.linkedin}><Icon icon='linkedin' className='text-3xl' /></Link>}
+                                    <img src={member.image} alt='profile' className='w-32 h-32 rounded-full lg:w-48 lg:h-48' />
                                 </div>
-                                <Text className='mt-4 font-semibold'>{member.name}</Text>
-                                <Text className='text-sm'>{member.role}</Text>
+                                <Text className='mt-4 font-semibold text-center'>{member.name}</Text>
+                                <Text className='text-sm text-center'>{member.role}</Text>
                             </div>
                         ))}
                     </>))}

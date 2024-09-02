@@ -1,5 +1,6 @@
 import React from 'react'
 import Heading from '../components/Text/Heading'
+import bg from '../assets/hl.png'
 
 export default function Hero() {
 
@@ -22,7 +23,7 @@ export default function Hero() {
             <iframe src='/hero.html' className='absolute z-50 object-cover w-full h-64 -translate-x-1/2 -translate-y-1/2 lg:h-128 top-1/2 left-1/2' title='Hero Video' />
             <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-row-reverse items-center justify-center w-full'>
                 <div className='flex flex-col items-center justify-center w-full h-full px-4 opacity-50 text-light'>
-                    <Heading className='lg:!text-4xl !text-sm w-full text-center overflow-hidden'>{getHeadings()}</Heading>
+                    <img src={bg} alt='bg' className='object-contain w-full h-full' />
                 </div>
             </div>
         </div>

@@ -26,9 +26,6 @@ export default function Hero() {
                     <img src={bg} alt='bg' className='object-contain w-full h-full' />
                 </div>
             </div>
-            <div className='absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center w-full h-full px-4 mt-4f top-1/2 text-zinc-400/50'>
-                <Heading className='text-2xl text-center text-zinc-400/50'>code.connect.create.</Heading>
-            </div>
         </div>
     )
 }

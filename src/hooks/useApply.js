@@ -1,5 +1,5 @@
 export const useApply=() => {
-    const applicationsOpen=true
+    const applicationsOpen=false
 
     const handleApply=() => {
         if(!applicationsOpen) {

@@ -14,7 +14,7 @@ import logo from '../assets/logo.png'
 import Hero from '../sections/Hero'
 import nightImage from '../assets/night.webp'
 import sdaImage from '../assets/sda.jpg'
-import isolaImage from '../assets/isola.jpg'
+import teamImage from '../assets/team.jpg'
 import Icon from '../components/Text/Icon'
 import {useApply} from '../hooks/useApply'
 
@@ -66,7 +66,7 @@ export default function Home() {
                     <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Apply Now</PrimaryButton>
                 </div>
             </Subhero>
-            <Subhero reverse image={isolaImage}>
+            <Subhero reverse image={teamImage}>
                 <Subheading>Why should I join the Hacklab?</Subheading>
                 <Text className='mt-2'>Unlock unique opportunities:</Text>
                 <Ul className='mt-4 text-lg'>

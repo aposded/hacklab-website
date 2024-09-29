@@ -39,7 +39,7 @@ export default function Team() {
         {name: 'Beatrice Branciamore',role: 'Co-Head of Digital',image: BeatriceIcon,linkedin: 'https://www.linkedin.com/in/beatrice-branciamore-262353289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Matteo Mercuri',role: 'Digital',image: MatteoIcon,linkedin: 'https://www.linkedin.com/in/matteo-mercuri-0b32a928b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Lorenzo Faella',role: 'Digital',image: LorenzoIcon,linkedin: 'https://www.linkedin.com/in/lorenzo-bernardo-faella-1a5892292/',department: 'The Board'},
-        {name: 'Carlo Maria Calvanico',role: 'Head of Outreach',image: CarloIcon,linkedin: 'https://www.linkedin.com/in/carlo-maria-calvanico-542a96292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
+        {name: 'Carlo Maria Calvanico',role: 'Coordination Strategist',image: CarloIcon,linkedin: 'https://www.linkedin.com/in/carlo-maria-calvanico-542a96292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',image: ApostolosIcon,linkedin: 'https://www.linkedin.com/in/dedeloudis/',department: 'Mentors'},
         {name: 'Danilo Scholz',image: DaniloIcon,linkedin: 'https://www.linkedin.com/in/danilo-scholz-202234275/',department: 'Mentors'},
         {name: 'Giacomo Cordella',image: JackIcon,department: 'Mentors'},

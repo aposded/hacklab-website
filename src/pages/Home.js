@@ -52,9 +52,9 @@ export default function Home() {
                 </div>
             </div>
             <Subhero image={sdaImage}>
-                <Subheading>What is the Hacklab?</Subheading>
+                <Subheading>What is the theHackLab?</Subheading>
                 <Text className='mt-2'>
-                    HackLab is a student-driven innovation hub at Bocconi. We bring together students from technical and business backgrounds to:
+                    theHackLab is a student-driven innovation hub at Bocconi. We bring together students from technical and business backgrounds to:
                 </Text>
                 <Ul className='mt-4 text-lg font-semibold'>
                     <li>Tackle real-world challenges</li>
@@ -67,7 +67,7 @@ export default function Home() {
                 </div>
             </Subhero>
             <Subhero reverse image={teamImage}>
-                <Subheading>Why should I join the Hacklab?</Subheading>
+                <Subheading>Why should I join the theHackLab?</Subheading>
                 <Text className='mt-2'>Unlock unique opportunities:</Text>
                 <Ul className='mt-4 text-lg'>
                     <li><span className='font-semibold'>Collaborate</span>: Work in teams with both tech and business students.</li>
@@ -77,7 +77,7 @@ export default function Home() {
                 </Ul>
             </Subhero>
             <Subhero image={nightImage} >
-                <Subheading>What will I do as a member of the HackLab?</Subheading>
+                <Subheading>What will I do as a member of the theHackLab?</Subheading>
                 <Ul className='mt-4 text-lg'>
                     <li><span className='font-semibold'>Tackle a real-world challenge</span>: Work on a meaningful problem relevant to current industry or societal needs.</li>
 
@@ -88,8 +88,8 @@ export default function Home() {
             </Subhero>
             <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
                 <div className='container flex flex-col items-center justify-center mx-auto'>
-                    <Heading className='text-center'>Ready to join the Hacklab?</Heading>
-                    <Text className='mt-4 text-center'>Applications are now open for the Fall 2024 semester.</Text>
+                    <Heading className='text-center'>Ready to join the theHackLab?</Heading>
+                    <Text className='mt-4 text-center'>Applications are now closed. Don't worry, they will open again in February.</Text>
                     <PrimaryButton onClick={handleApply} className='mt-4'>Apply Now</PrimaryButton>
                 </div>
             </div>

@@ -44,7 +44,6 @@ export default function Team() {
         {name: 'Danilo Scholz',image: DaniloIcon,linkedin: 'https://www.linkedin.com/in/danilo-scholz-202234275/',department: 'Mentors'},
         {name: 'Giacomo Cordella',image: JackIcon,department: 'Mentors'},
         {name: 'Damir Maksut',image: DamirIcon,department: 'Mentors'},
-        {name: 'Alessandro Ferraiolo',image: AlessandroIcon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'Mentors'},
         {name: 'Andrea Bonarrigo',image: AndreaIcon,linkedin: 'https://www.linkedin.com/in/andrea-bonarrigo/',department: 'Mentors'},
     ]
 

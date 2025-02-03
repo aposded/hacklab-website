@@ -36,7 +36,7 @@ export default function Team() {
         {name: 'Giacomo Cordella',role: 'Head of HR',image: JackIcon,department: 'The Board'},
         {name: 'Damir Maksut',role: 'Co-Head of Events',image: DamirIcon,department: 'The Board'},
         {name: 'Albert Loog',role: 'Co-Head of Events',image: AlbertIcon,linkedin: 'https://www.linkedin.com/in/albertloog?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
-        {name: 'Beatrice Branciamore',role: 'Co-Head of Digital',image: BeatriceIcon,linkedin: 'https://www.linkedin.com/in/beatrice-branciamore-262353289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
+        {name: 'Beatrice Branciamore',role: 'Head of Digital',image: BeatriceIcon,linkedin: 'https://www.linkedin.com/in/beatrice-branciamore-262353289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Lorenzo Faella',role: 'Digital',image: LorenzoIcon,linkedin: 'https://www.linkedin.com/in/lorenzo-bernardo-faella-1a5892292/',department: 'The Board'},
         {name: 'Matteo Mendicini',role: 'Coordination Strategist',image: MatteoMIcon,linkedin: 'https://www.linkedin.com/in/matteomendicini/',department: 'The Board'},
         {name: 'Carlo Maria Calvanico',role: 'Coordination Strategist',image: CarloIcon,linkedin: 'https://www.linkedin.com/in/carlo-maria-calvanico-542a96292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},

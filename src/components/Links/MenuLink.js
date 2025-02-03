@@ -3,7 +3,7 @@ import {Link as RrdLink} from 'react-router-dom'
 
 export default function MenuLink({to='',children}) {
     const handleColor=(e) => {
-        e.target.className=e.target.className.replace('text-light',['text-hl-blue','text-hl-purple','text-hl-green'][Math.floor(Math.random()*3)%3])
+        e.target.className=e.target.className.replace('text-light',['text-hl-blue','text-hl-purple','text-hl-green'][Math.floor(Math.random()*3)])
     }
 
     const handleRemoveColor=(e) => {

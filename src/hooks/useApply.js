@@ -6,7 +6,7 @@ export const useApply=() => {
             alert('Applications are now closed. Don\'t worry,they will open again in February.')
             return
         }
-        window.location.href='TKTKTKTK'
+        window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf866lN5H1gNN5Mxx0uI_x936A52IiQ5jn1dC8ZXKEGZgyLtA/viewform?usp=header'
     }
     return {handleApply,applicationsOpen}
 }

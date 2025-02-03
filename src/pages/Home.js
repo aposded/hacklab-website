@@ -23,9 +23,11 @@ import bg from '../assets/hl.png'
 import ph1 from '../assets/ph1.jpeg'
 import ph2 from '../assets/ph2.jpeg'
 import ph3 from '../assets/ph3.jpeg'
+import {useNavigate} from 'react-router-dom'
 
 export default function Home() {
     const {handleApply}=useApply()
+    const navigate=useNavigate()
 
     return (
         <div>
@@ -99,7 +101,7 @@ export default function Home() {
                 {/* <Text className='mt-2'>No matter your background, there's a place for you in theHackLab!</Text> */}
                 <Text className='mt-4 text-center lg:mt-16'>Help us make theHackLab better!</Text>
                 <div className='flex items-center justify-center w-full'>
-                    <SecondaryButton onClick={handleApply} className='mx-auto mt-4'>Join our team</SecondaryButton>
+                    <SecondaryButton onClick={() => navigate('https://docs.google.com/forms/d/e/1FAIpQLSf866lN5H1gNN5Mxx0uI_x936A52IiQ5jn1dC8ZXKEGZgyLtA/viewform?usp=header')} className='mx-auto mt-4'>Join our team</SecondaryButton>
                 </div>
             </Subhero>
             <div className='relative flex flex-col items-center justify-center w-full py-8 mx-auto rounded-lg lg:w-1/2 pt-18 lg:pt-32 bg-dark bg-opacity-40 bg-blur text-light'>

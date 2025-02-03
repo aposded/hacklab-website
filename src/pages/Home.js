@@ -100,8 +100,10 @@ export default function Home() {
                 </Ul>
                 {/* <Text className='mt-2'>No matter your background, there's a place for you in theHackLab!</Text> */}
                 <Text className='mt-4 text-center lg:mt-16'>Help us make theHackLab better!</Text>
-                <div className='flex items-center justify-center w-full'>
-                    <SecondaryButton onClick={() => navigate('https://docs.google.com/forms/d/e/1FAIpQLSf866lN5H1gNN5Mxx0uI_x936A52IiQ5jn1dC8ZXKEGZgyLtA/viewform?usp=header')} className='mx-auto mt-4'>Join our team</SecondaryButton>
+                <div className='flex flex-col items-center justify-around w-full gap-2 mt-4 lg:flex-row'>
+                    <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeb6UPwLdChXQ9I2ZWk1EiK-NYVUIgIQllauI8ZKhnRXiV-Ow/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join Digital</SecondaryButton>
+                    <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScywAibOLGgJYNk-KHiGQdvSdJ_0NQdATpc1C27lASyxHPP6Q/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join IT</SecondaryButton>
+                    <SecondaryButton onClick={() => alert('We do not accept any more applications for mentors right now.')} className='mx-auto lg:mt-4 !w-full'>Become a mentor</SecondaryButton>
                 </div>
             </Subhero>
             <div className='relative flex flex-col items-center justify-center w-full py-8 mx-auto rounded-lg lg:w-1/2 pt-18 lg:pt-32 bg-dark bg-opacity-40 bg-blur text-light'>

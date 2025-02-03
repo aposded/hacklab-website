@@ -103,7 +103,7 @@ export default function Home() {
                 <div className='flex flex-col items-center justify-around w-full gap-2 mt-4 lg:flex-row'>
                     <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeb6UPwLdChXQ9I2ZWk1EiK-NYVUIgIQllauI8ZKhnRXiV-Ow/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join Digital</SecondaryButton>
                     <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScywAibOLGgJYNk-KHiGQdvSdJ_0NQdATpc1C27lASyxHPP6Q/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join IT</SecondaryButton>
-                    <SecondaryButton onClick={() => alert('We do not accept any more applications for mentors right now.')} className='mx-auto lg:mt-4 !w-full'>Become a mentor</SecondaryButton>
+                    <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSep7SM4O9LreJiHum-UQ55DV-41Xx1C3nknBnTlMzWdQ3jPug/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Become a mentor</SecondaryButton>
                 </div>
             </Subhero>
             <div className='relative flex flex-col items-center justify-center w-full py-8 mx-auto rounded-lg lg:w-1/2 pt-18 lg:pt-32 bg-dark bg-opacity-40 bg-blur text-light'>

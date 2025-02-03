@@ -22,7 +22,7 @@ export default function Subhero({image,children,reverse,index}) {
     return (
         <div className={'flex flex-col items-center justify-center py-8 w-full gap-12 mt-8 '+(reverse? 'flex-col lg:flex-row-reverse':' flex-col lg:flex-row')}>
             <div className='w-full lg:w-1/2'>
-                <div className={classNames('w-4/5 mx-auto mb-8 rounded-full bg-dark-200 bg-opacity-20 aspect-square lg:mb-0',typeof index==='number'? ['bg-hl-yellow','bg-hl-purple','bg-hl-green'][index%3]:'bg-dark-200')}>
+                <div className={classNames('w-4/5 mx-auto mb-8 rounded-full bg-dark-200 bg-opacity-20 aspect-square lg:mb-0',typeof index==='number'? ['bg-hl-blue','bg-hl-purple','bg-hl-green'][index%3]:'bg-dark-200')}>
                     <img src={image} alt='decorative' className='object-cover p-4 rounded-full lg:p-8 aspect-square' />
                 </div>
             </div>

@@ -30,7 +30,7 @@ export default function Home() {
     const navigate=useNavigate()
 
     return (
-        <div>
+        <div className='pb-16'>
             <Hero></Hero>
             <div style={{
                 placeItems: 'start center'

@@ -30,8 +30,8 @@ export default function About() {
             <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
                 <div className='container flex flex-col items-center justify-center mx-auto'>
                     <Heading className='text-center'>Ready to join theHacklab?</Heading>
-                    <Text className='mt-4 text-center'>Applications are now open for the Fall 2024 semester.</Text>
-                    <PrimaryButton onClick={handleApply} className='mt-4'>Apply Now</PrimaryButton>
+                    <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
+                    <PrimaryButton onClick={handleApply} className='mt-4'>Join the challenge!</PrimaryButton>
                 </div>
             </div>
 

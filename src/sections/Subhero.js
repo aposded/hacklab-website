@@ -3,6 +3,7 @@ import Subheading from '../components/Text/Subheading'
 import Heading from '../components/Text/Heading'
 import Text from '../components/Text/Text'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
+import classNames from 'classnames'
 
 /**
  * 
@@ -15,11 +16,13 @@ import PrimaryButton from '../components/Buttons/PrimaryButton'
  * @property {boolean} reverse - Whether to reverse the image and text
  */
 
-export default function Subhero({image,children,reverse}) {
+
+
+export default function Subhero({image,children,reverse,index}) {
     return (
         <div className={'flex flex-col items-center justify-center py-8 w-full gap-12 mt-8 '+(reverse? 'flex-col lg:flex-row-reverse':' flex-col lg:flex-row')}>
             <div className='w-full lg:w-1/2'>
-                <div className='w-4/5 mx-auto mb-8 rounded-full bg-dark-200 bg-opacity-20 aspect-square lg:mb-0'>
+                <div className={classNames('w-4/5 mx-auto mb-8 rounded-full bg-dark-200 bg-opacity-20 aspect-square lg:mb-0',typeof index==='number'? ['bg-hl-yellow','bg-hl-purple','bg-hl-green'][index%3]:'bg-dark-200')}>
                     <img src={image} alt='decorative' className='object-cover p-4 rounded-full lg:p-8 aspect-square' />
                 </div>
             </div>

@@ -22,6 +22,9 @@ module.exports={
           DEFAULT: '#111b1e',
         },
         'light': '#f0f0f0',
+        'hl-purple': 'rgb(152,19,236)',
+        'hl-green': 'rgb(99,137,76)',
+        'hl-yellow': 'rgb(230,189,20)'
 
       },
       maxWidth: {

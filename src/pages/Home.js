@@ -17,6 +17,12 @@ import sdaImage from '../assets/sda.jpg'
 import teamImage from '../assets/team.jpg'
 import Icon from '../components/Text/Icon'
 import {useApply} from '../hooks/useApply'
+import piSchoolLogo from '../assets/pi_school_logo.PNG'
+import b4iLogo from '../assets/b4i_logo.PNG'
+import bg from '../assets/hl.png'
+import ph1 from '../assets/ph1.jpeg'
+import ph2 from '../assets/ph2.jpeg'
+import ph3 from '../assets/ph3.jpeg'
 
 export default function Home() {
     const {handleApply}=useApply()
@@ -51,46 +57,68 @@ export default function Home() {
                     </Text>
                 </div>
             </div>
-            <Subhero image={sdaImage}>
-                <Subheading>What is the theHackLab?</Subheading>
+            <Subhero image={ph1} index={0}>
+                <Subheading>What is the theHackLab's startup challenge?</Subheading>
                 <Text className='mt-2'>
+                    It's a semester-long innovation competition where student teams develop innovative software solutions to tackle real-world challenges.</Text>
+                <Ul className='mt-4 text-lg'>
+                    <li><span className='font-semibold'>Build something impactful</span> - Develop solutions to real problems designing a product with market potential.</li>
+                    <li><span className='font-semibold'>Gain hands-on experience</span> - Design, develop, and launch your fully functional software solution.</li>
+                    <li><span className='font-semibold'>Showcase your work </span> - Pitch your solution to industry experts on <span className='font-semibold'>Pitch Day</span>.</li>
+                </Ul>
+                {/* <Text className='mt-2'>
                     theHackLab is a student-driven innovation hub at Bocconi. We bring together students from technical and business backgrounds to:
                 </Text>
                 <Ul className='mt-4 text-lg font-semibold'>
                     <li>Tackle real-world challenges</li>
                     <li>Develop prototypes over a semester</li>
                     <li>Collaborate in diverse, interdisciplinary teams</li>
+                </Ul> */}
+            </Subhero>
+            <Subhero reverse image={ph2} index={1}>
+                <Subheading>Why should I join the theHackLab?</Subheading>
+                <Text className='mt-2'>This is more than just a competition—it's a launchpad for your skills and future opportunities.</Text>
+                <Ul className='mt-4 text-lg'>
+                    <li><span className='font-semibold'>Collaborate across disciplines</span> - Team up with tech and business students.</li>
+                    <li><span className='font-semibold'>Learn from experts</span> - Get mentorship from industry leaders.</li>
+                    <li><span className='font-semibold'>⁠Expand your network</span> - Connect with peers, professionals, and potential employers.</li>
                 </Ul>
                 <Text className='mt-4 text-center lg:mt-16'>Join us to turn ideas into impactful solutions!</Text>
                 <div className='flex items-center justify-center w-full'>
-                    <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Apply Now</PrimaryButton>
+                    <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Join the challenge!</PrimaryButton>
                 </div>
             </Subhero>
-            <Subhero reverse image={teamImage}>
-                <Subheading>Why should I join the theHackLab?</Subheading>
-                <Text className='mt-2'>Unlock unique opportunities:</Text>
-                <Ul className='mt-4 text-lg'>
-                    <li><span className='font-semibold'>Collaborate</span>: Work in teams with both tech and business students.</li>
-                    <li><span className='font-semibold'>Gain Experience</span>: Develop hands-on skills in innovation and entrepreneurship.</li>
-                    <li><span className='font-semibold'>Network</span>: Connect with peers, mentors, and industry professionals.</li>
-                    <li><span className='font-semibold'>Showcase Your Work</span>: Present your prototype to a panel of judges.</li>
+            <Subhero image={ph3} index={2}>
+                <Subheading>Can I join theHackLab Team?</Subheading>
+                <Text className='mt-2'>Yes! We’re always looking for new members of theHackLab team. Choose a role that fits your skills:</Text>
+                <Ul className={'mt-4 text-lg'}>
+                    <li><span className='font-semibold'>Digital</span> - Drive content creation, social media, and event promotion.</li>
+                    <li><span className='font-semibold'>IT</span> - Help develop and maintain our technical infrastructure.</li>
+                    <li><span className='font-semibold'>Mentorship</span> - Guide and support project teams with your expertise.</li>
                 </Ul>
+                {/* <Text className='mt-2'>No matter your background, there's a place for you in theHackLab!</Text> */}
+                <Text className='mt-4 text-center lg:mt-16'>Help us make theHackLab better!</Text>
+                <div className='flex items-center justify-center w-full'>
+                    <SecondaryButton onClick={handleApply} className='mx-auto mt-4'>Join our team</SecondaryButton>
+                </div>
             </Subhero>
-            <Subhero image={nightImage} >
-                <Subheading>What will I do as a member of the theHackLab?</Subheading>
-                <Ul className='mt-4 text-lg'>
-                    <li><span className='font-semibold'>Tackle a real-world challenge</span>: Work on a meaningful problem relevant to current industry or societal needs.</li>
-
-                    <li><span className='font-semibold'>Develop a prototype solution</span>: Create and refine a tangible prototype over the semester.</li>
-
-                    <li><span className='font-semibold'>Access workshops and mentorship</span>: Receive guidance and support through specialized workshops and expert mentors.</li>
-                </Ul>
-            </Subhero>
-            <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
+            <div className='relative flex flex-col items-center justify-center w-full py-8 mx-auto rounded-lg lg:w-1/2 pt-18 lg:pt-32 bg-dark bg-opacity-40 bg-blur text-light'>
+                <Subheading>Our Partners</Subheading>
+                <div className='flex flex-col items-center justify-center w-full gap-16 p-4 lg:flex-row'>
+                    <Link to='https://www.b4i.unibocconi.it/'><img src={b4iLogo} alt='b4i Logo' className='w-32' /></Link>
+                    <Link to='https://picampus-school.com/'><img src={piSchoolLogo} alt='b4i Logo' className='w-64' /></Link>
+                </div>
+                {/* <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-row-reverse items-center justify-center w-full'>
+                    <div className='flex flex-col items-center justify-center w-full h-full px-4 opacity-50 text-light'>
+                        <img src={bg} alt='bg' className='object-contain w-full h-full' />
+                    </div>
+                </div> */}
+            </div>
+            <div className='py-8 pt-18 lg:pt-32 text-light'>
                 <div className='container flex flex-col items-center justify-center mx-auto'>
                     <Heading className='text-center'>Ready to join the theHackLab?</Heading>
-                    <Text className='mt-4 text-center'>Applications are now closed. Don't worry, they will open again in February.</Text>
-                    <PrimaryButton onClick={handleApply} className='mt-4'>Apply Now</PrimaryButton>
+                    <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
+                    <PrimaryButton onClick={handleApply} className='mt-4'>Join the challenge!</PrimaryButton>
                 </div>
             </div>
         </div>

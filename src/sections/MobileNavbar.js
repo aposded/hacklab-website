@@ -5,6 +5,7 @@ import Link from '../components/Links/Link'
 import Icon from '../components/Text/Icon'
 import MenuLink from '../components/Links/MenuLink'
 import {useApply} from '../hooks/useApply'
+import PrimaryButton from '../components/Buttons/PrimaryButton'
 
 export default function MobileNavbar() {
     const [expanded,setExpanded]=useState(false)
@@ -21,9 +22,10 @@ export default function MobileNavbar() {
             {expanded&&<div className='flex flex-col w-full gap-4 px-4 py-4 lg:hidden'>
                 <MenuLink to='/'>Home</MenuLink>
                 <MenuLink to='/about'>About</MenuLink>
-                <MenuLink to='/projects'>Projects</MenuLink>
+                <MenuLink to='/projects'>Past Projects</MenuLink>
                 <MenuLink to='/team'>Our Team</MenuLink>
-                <SecondaryButton onClick={handleApply}>Apply</SecondaryButton>
+                <MenuLink to='mailto:thehacklab.bocconi@gmail.com'>Contact Us</MenuLink>
+                <PrimaryButton onClick={handleApply}>Join the challenge!</PrimaryButton>
             </div>}
 
         </>

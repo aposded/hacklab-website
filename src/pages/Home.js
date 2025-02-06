@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
             </Subhero>
             <div className='relative flex flex-col items-center justify-center w-full py-8 mx-auto rounded-lg lg:w-1/2 pt-18 lg:pt-32 bg-dark bg-opacity-40 bg-blur text-light'>
-                <Subheading>Our Partners</Subheading>
+                <Subheading>Judges have come from:</Subheading>
                 <div className='flex flex-col items-center justify-center w-full gap-16 p-4 lg:flex-row'>
                     <Link to='https://www.b4i.unibocconi.it/'><img src={b4iLogo} alt='b4i Logo' className='w-32' /></Link>
                     <Link to='https://picampus-school.com/'><img src={piSchoolLogo} alt='b4i Logo' className='w-64' /></Link>

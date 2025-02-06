@@ -19,6 +19,7 @@ import Icon from '../components/Text/Icon'
 import {useApply} from '../hooks/useApply'
 import piSchoolLogo from '../assets/pi_school_logo.PNG'
 import b4iLogo from '../assets/b4i_logo.PNG'
+import bcgx_logo from '../assets/bcgx_logo.png'
 import bg from '../assets/hl.png'
 import ph1 from '../assets/ph1.jpeg'
 import ph2 from '../assets/ph2.jpeg'
@@ -110,7 +111,8 @@ export default function Home() {
                 <Subheading>Judges have come from:</Subheading>
                 <div className='flex flex-col items-center justify-center w-full gap-16 p-4 lg:flex-row'>
                     <Link to='https://www.b4i.unibocconi.it/'><img src={b4iLogo} alt='b4i Logo' className='w-32' /></Link>
-                    <Link to='https://picampus-school.com/'><img src={piSchoolLogo} alt='b4i Logo' className='w-64' /></Link>
+                    <Link to='https://picampus-school.com/'><img src={piSchoolLogo} alt='piSchool Logo' className='w-64' /></Link>
+                    <Link to='https://www.bcg.com/x'><img src={bcgx_logo} alt='bcg Logo' className='w-64' /></Link>
                 </div>
                 {/* <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-row-reverse items-center justify-center w-full'>
                     <div className='flex flex-col items-center justify-center w-full h-full px-4 opacity-50 text-light'>

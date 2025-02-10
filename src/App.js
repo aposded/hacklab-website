@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import Main from "./layouts/Main";
 import Team from "./pages/Team";
+import Challenge from "./pages/Challenge";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/team" element={<Team />} />
+            <Route path='/challenge' element={<Challenge />} />
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>

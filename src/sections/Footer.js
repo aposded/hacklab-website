@@ -21,6 +21,7 @@ export default function Footer() {
                 <div className='items-center justify-center hidden gap-4 text-white lg:flex'>
                     <MenuLink to='/'>Home</MenuLink>
                     <MenuLink to='/about'>About</MenuLink>
+                    <MenuLink to='/challenge'>The Challenge</MenuLink>
                     <MenuLink to='/projects'>Past Projects</MenuLink>
                     <MenuLink to='/team'>Our Team</MenuLink>
                     <MenuLink to='mailto:thehacklab.bocconi@gmail.com'>Contact Us</MenuLink>

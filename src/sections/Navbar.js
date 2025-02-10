@@ -16,6 +16,7 @@ export default function Navbar() {
             <div className='flex items-center justify-center gap-4'>
                 <MenuLink to='/'>Home</MenuLink>
                 <MenuLink to='/about'>About</MenuLink>
+                <MenuLink to='/challenge'>The Challenge</MenuLink>
                 <MenuLink to='/projects'>Past Projects</MenuLink>
                 <MenuLink to='/team'>Our Team</MenuLink>
                 <MenuLink to='mailto:thehacklab.bocconi@gmail.com'>Contact Us</MenuLink>

@@ -17,9 +17,13 @@ import sdaImage from '../assets/sda.jpg'
 import teamImage from '../assets/team.jpg'
 import Icon from '../components/Text/Icon'
 import {useApply} from '../hooks/useApply'
-import piSchoolLogo from '../assets/pi_school_logo.PNG'
-import b4iLogo from '../assets/b4i_logo.PNG'
-import bcgx_logo from '../assets/bcgx_logo.png'
+import piSchoolLogo from '../assets/sponsors/pi_school_logo.PNG'
+import b4iLogo from '../assets/sponsors/b4i_logo.PNG'
+import bcgxLogo from '../assets/sponsors/bcgx_logo.png'
+import chapeauLogo from '../assets/sponsors/chapeau_logo.png'
+import sdaBocconiLogo from '../assets/sponsors/sda_bocconi_logo.png'
+import kymaTeamLogo from '../assets/sponsors/kyma_team.svg'
+import khHoldingsLogo from '../assets/sponsors/kh_holdings_logo.png'
 import bg from '../assets/hl.png'
 import ph1 from '../assets/ph1.jpeg'
 import ph2 from '../assets/ph2.jpeg'
@@ -35,24 +39,24 @@ export default function Home() {
             <Hero></Hero>
             <div style={{
                 placeItems: 'start center'
-            }} className='grid w-full grid-cols-1 gap-6 my-12 lg:grid-cols-3 '>
-                <div className='flex flex-col items-center justify-center w-4/5 gap-6'>
-                    <div className='flex items-center justify-center w-24 h-24 rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
+            }} className='grid grid-cols-1 gap-6 my-12 w-full lg:grid-cols-3'>
+                <div className='flex flex-col gap-6 justify-center items-center w-4/5'>
+                    <div className='flex justify-center items-center w-24 h-24 bg-opacity-20 rounded-full bg-dark-200 aspect-square'>
                         <Icon icon='code' className='text-6xl text-dark' />
                     </div>
                     <Heading>Code</Heading>
                     <Text className='text-center'>Develop hands-on skills in innovation and entrepreneurship.</Text>
                 </div>
-                <div className='flex flex-col items-center justify-center w-4/5 gap-6'>
-                    <div className='flex items-center justify-center w-24 h-24 rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
+                <div className='flex flex-col gap-6 justify-center items-center w-4/5'>
+                    <div className='flex justify-center items-center w-24 h-24 bg-opacity-20 rounded-full bg-dark-200 aspect-square'>
                         <Icon icon='people-fill' className='text-5xl text-dark' />
                     </div>
                     <Heading>Connect</Heading>
                     <Text className='text-center'>Collaborate with peers, mentors, and industry professionals.</Text>
                 </div>
-                <div className='flex flex-col items-center justify-center w-4/5 gap-6'>
-                    <div className='flex items-center justify-center w-24 h-24 rounded-full bg-dark-200 bg-opacity-20 aspect-square'>
-                        <Icon icon='rocket-takeoff-fill' className='mt-1 text-5xl mr-0.5 text-dark' />
+                <div className='flex flex-col gap-6 justify-center items-center w-4/5'>
+                    <div className='flex justify-center items-center w-24 h-24 bg-opacity-20 rounded-full bg-dark-200 aspect-square'>
+                        <Icon icon='rocket-takeoff-fill' className='mt-1 mr-0.5 text-5xl text-dark' />
                     </div>
                     <Heading>Create</Heading>
                     <Text className='text-center'>
@@ -87,7 +91,7 @@ export default function Home() {
                     <li><span className='font-semibold'>⁠Expand your network</span> - Connect with peers, professionals, and potential employers.</li>
                 </Ul>
                 <Text className='mt-4 text-center lg:mt-16'>Join us to turn ideas into impactful solutions!</Text>
-                <div className='flex items-center justify-center w-full'>
+                <div className='flex justify-center items-center w-full'>
                     <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Join the challenge!</PrimaryButton>
                 </div>
             </Subhero>
@@ -101,27 +105,31 @@ export default function Home() {
                 </Ul>
                 {/* <Text className='mt-2'>No matter your background, there's a place for you in theHackLab!</Text> */}
                 <Text className='mt-4 text-center lg:mt-16'>Help us make theHackLab better!</Text>
-                <div className='flex flex-col items-center justify-around w-full gap-2 mt-4 lg:flex-row'>
+                <div className='flex flex-col gap-2 justify-around items-center mt-4 w-full lg:flex-row'>
                     <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeb6UPwLdChXQ9I2ZWk1EiK-NYVUIgIQllauI8ZKhnRXiV-Ow/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join Digital</SecondaryButton>
                     <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScywAibOLGgJYNk-KHiGQdvSdJ_0NQdATpc1C27lASyxHPP6Q/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join IT</SecondaryButton>
                     <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSep7SM4O9LreJiHum-UQ55DV-41Xx1C3nknBnTlMzWdQ3jPug/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Become a mentor</SecondaryButton>
                 </div>
             </Subhero>
-            <div className='relative flex flex-col items-center justify-center w-full py-8 mx-auto rounded-lg lg:w-1/2 pt-18 lg:pt-32 bg-dark bg-opacity-40 bg-blur text-light'>
+            <div className='flex relative flex-col justify-center items-center py-8 mx-auto w-full bg-opacity-40 rounded-lg lg:w-3/4 pt-18 lg:pt-32 bg-dark bg-blur text-light'>
                 <Subheading>Judges have come from:</Subheading>
-                <div className='flex flex-col items-center justify-center w-full gap-16 p-4 lg:flex-row'>
+                <div className='grid grid-cols-4 gap-16 justify-center items-center p-4 w-full'>
                     <Link to='https://www.b4i.unibocconi.it/'><img src={b4iLogo} alt='b4i Logo' className='w-32' /></Link>
                     <Link to='https://picampus-school.com/'><img src={piSchoolLogo} alt='piSchool Logo' className='w-64' /></Link>
-                    <Link to='https://www.bcg.com/x'><img src={bcgx_logo} alt='bcg Logo' className='w-64' /></Link>
+                    <Link to='https://www.bcg.com/x'><img src={bcgxLogo} alt='bcg Logo' className='w-64' /></Link>
+                    <Link to='https://www.chapeaumedia.it/'><img src={chapeauLogo} alt='chapeau Logo' className='w-64' /></Link>
+                    <Link to='https://www.sdabocconi.it/it/home'><img src={sdaBocconiLogo} alt='sda Logo' className='w-64' /></Link>
+                    <Link to='https://www.kymateam.com/'><img src={kymaTeamLogo} alt='kyma Logo' className='w-64' /></Link>
+                    <Link to='https://www.khholdings.eu/'><img src={khHoldingsLogo} alt='kh Holdings Logo' className='px-8 w-64' /></Link>
                 </div>
-                {/* <div className='absolute top-0 bottom-0 left-0 right-0 flex flex-row-reverse items-center justify-center w-full'>
-                    <div className='flex flex-col items-center justify-center w-full h-full px-4 opacity-50 text-light'>
+                {/* <div className='flex absolute top-0 right-0 bottom-0 left-0 flex-row-reverse justify-center items-center w-full'>
+                    <div className='flex flex-col justify-center items-center px-4 w-full h-full opacity-50 text-light'>
                         <img src={bg} alt='bg' className='object-contain w-full h-full' />
                     </div>
                 </div> */}
             </div>
             <div className='py-8 pt-18 lg:pt-32 text-light'>
-                <div className='container flex flex-col items-center justify-center mx-auto'>
+                <div className='container flex flex-col justify-center items-center mx-auto'>
                     <Heading className='text-center'>Ready to join the theHackLab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
                     <PrimaryButton onClick={handleApply} className='mt-4'>Join the challenge!</PrimaryButton>

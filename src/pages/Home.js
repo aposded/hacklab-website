@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../sections/Navbar'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
-import SecondaryButton from '../components/Buttons/SecondaryButton'
 import Heading from '../components/Text/Heading'
 import Subheading from '../components/Text/Subheading'
 import Link from '../components/Links/Link'
@@ -25,14 +24,12 @@ import sdaBocconiLogo from '../assets/sponsors/sda_bocconi_logo.png'
 import kymaTeamLogo from '../assets/sponsors/kyma_team.svg'
 import khHoldingsLogo from '../assets/sponsors/kh_holdings_logo.png'
 import bg from '../assets/hl.png'
-import ph1 from '../assets/ph1.jpeg'
+import ph1 from '../assets/S25_PIC_5.JPG'
 import ph2 from '../assets/ph2.jpeg'
 import ph3 from '../assets/ph3.jpeg'
-import {useNavigate} from 'react-router-dom'
 
 export default function Home() {
-    const {handleApply}=useApply()
-    const navigate=useNavigate()
+    const {applyFinance,applyEntrepreneurship}=useApply()
 
     return (
         <div className='pb-16'>
@@ -65,50 +62,41 @@ export default function Home() {
                 </div>
             </div>
             <Subhero image={ph1} index={0}>
-                <Subheading>What is the theHackLab's startup challenge?</Subheading>
+                <Subheading>Our Two Flagship Challenges</Subheading>
                 <Text className='mt-2'>
-                    It's a semester-long innovation competition where student teams develop innovative software solutions to tackle real-world challenges.</Text>
+                    Each semester, we organize two distinct challenges that bring together students from diverse backgrounds to tackle real-world problems in finance and entrepreneurship. Choose the track that matches your interests and skills.</Text>
                 <Ul className='mt-4 text-lg'>
-                    <li><span className='font-semibold'>Build something impactful</span> - Develop solutions to real problems designing a product with market potential.</li>
-                    <li><span className='font-semibold'>Gain hands-on experience</span> - Design, develop, and launch your fully functional software solution.</li>
-                    <li><span className='font-semibold'>Showcase your work </span> - Pitch your solution to industry experts on <span className='font-semibold'>Pitch Day</span>.</li>
+                    <li><span className='font-semibold'>Finance Challenge</span> - Develop innovative fintech solutions, analyze market data, and create financial models that address industry challenges.</li>
+                    <li><span className='font-semibold'>Entrepreneurship Challenge</span> - Build startup ideas from concept to prototype, focusing on product development and business strategy.</li>
+                    <li><span className='font-semibold'>Expert mentorship</span> - Get guidance from industry professionals in both finance and entrepreneurship sectors.</li>
                 </Ul>
-                {/* <Text className='mt-2'>
-                    theHackLab is a student-driven innovation hub at Bocconi. We bring together students from technical and business backgrounds to:
-                </Text>
-                <Ul className='mt-4 text-lg font-semibold'>
-                    <li>Tackle real-world challenges</li>
-                    <li>Develop prototypes over a semester</li>
-                    <li>Collaborate in diverse, interdisciplinary teams</li>
-                </Ul> */}
             </Subhero>
             <Subhero reverse image={ph2} index={1}>
                 <Subheading>Why should I join the theHackLab?</Subheading>
-                <Text className='mt-2'>This is more than just a competition—it's a launchpad for your skills and future opportunities.</Text>
+                <Text className='mt-2'>Whether you're passionate about finance or entrepreneurship, our challenges offer the perfect platform to develop your skills and make meaningful connections.</Text>
                 <Ul className='mt-4 text-lg'>
-                    <li><span className='font-semibold'>Collaborate across disciplines</span> - Team up with tech and business students.</li>
-                    <li><span className='font-semibold'>Learn from experts</span> - Get mentorship from industry leaders.</li>
-                    <li><span className='font-semibold'>⁠Expand your network</span> - Connect with peers, professionals, and potential employers.</li>
+                    <li><span className='font-semibold'>Collaborate across disciplines</span> - Team up with finance, business, and tech students from different backgrounds.</li>
+                    <li><span className='font-semibold'>Learn from experts</span> - Get mentorship from industry leaders in finance and entrepreneurship.</li>
+                    <li><span className='font-semibold'>⁠Expand your network</span> - Connect with peers, professionals, and potential employers in both sectors.</li>
                 </Ul>
                 <Text className='mt-4 text-center lg:mt-16'>Join us to turn ideas into impactful solutions!</Text>
-                <div className='flex justify-center items-center w-full'>
-                    <PrimaryButton onClick={handleApply} className='mx-auto mt-4'>Join the challenge!</PrimaryButton>
+                <div className='flex flex-wrap justify-center items-center w-full gap-2 mt-4'>
+                    <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                    <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
                 </div>
             </Subhero>
             <Subhero image={ph3} index={2}>
                 <Subheading>Can I join theHackLab Team?</Subheading>
-                <Text className='mt-2'>Yes! We’re always looking for new members of theHackLab team. Choose a role that fits your skills:</Text>
+                <Text className='mt-2'>Yes! We're always looking for passionate students to join our team. Whether you're interested in digital marketing, technical development, mentorship, or other areas, there's a place for you at theHackLab.</Text>
                 <Ul className={'mt-4 text-lg'}>
                     <li><span className='font-semibold'>Digital</span> - Drive content creation, social media, and event promotion.</li>
                     <li><span className='font-semibold'>IT</span> - Help develop and maintain our technical infrastructure.</li>
                     <li><span className='font-semibold'>Mentorship</span> - Guide and support project teams with your expertise.</li>
+                    <li><span className='font-semibold'>Operations</span> - Support event planning, logistics, and community management.</li>
                 </Ul>
-                {/* <Text className='mt-2'>No matter your background, there's a place for you in theHackLab!</Text> */}
                 <Text className='mt-4 text-center lg:mt-16'>Help us make theHackLab better!</Text>
-                <div className='flex flex-col gap-2 justify-around items-center mt-4 w-full lg:flex-row'>
-                    <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeb6UPwLdChXQ9I2ZWk1EiK-NYVUIgIQllauI8ZKhnRXiV-Ow/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join Digital</SecondaryButton>
-                    <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScywAibOLGgJYNk-KHiGQdvSdJ_0NQdATpc1C27lASyxHPP6Q/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Join IT</SecondaryButton>
-                    <SecondaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSep7SM4O9LreJiHum-UQ55DV-41Xx1C3nknBnTlMzWdQ3jPug/viewform?usp=header'} className='mx-auto lg:mt-4 !w-full'>Become a mentor</SecondaryButton>
+                <div className='flex justify-center items-center w-full'>
+                    <PrimaryButton onClick={() => window.location.href='TKTKTKTKTK'} className='mx-auto mt-4'>Join the Team</PrimaryButton>
                 </div>
             </Subhero>
             <div className='flex relative flex-col justify-center items-center py-8 mx-auto w-full bg-opacity-40 rounded-lg lg:w-3/4 pt-18 lg:pt-32 bg-dark bg-blur text-light'>
@@ -132,7 +120,10 @@ export default function Home() {
                 <div className='container flex flex-col justify-center items-center mx-auto'>
                     <Heading className='text-center'>Ready to join the theHackLab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
-                    <PrimaryButton onClick={handleApply} className='mt-4'>Join the challenge!</PrimaryButton>
+                    <div className='flex flex-wrap justify-center items-center gap-2 mt-4'>
+                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                    </div>
                 </div>
             </div>
         </div>

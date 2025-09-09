@@ -1,14 +1,11 @@
 import React from 'react'
-import Heading from '../components/Text/Heading'
 import logo from '../assets/logo.png'
-import Link from '../components/Links/Link'
-import SecondaryButton from '../components/Buttons/SecondaryButton'
 import MenuLink from '../components/Links/MenuLink'
 import {useApply} from '../hooks/useApply'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
 
 export default function Navbar() {
-    const {handleApply}=useApply()
+    const {applyFinance,applyEntrepreneurship}=useApply()
 
     return (
         <div className='justify-between hidden w-full px-4 py-4 mb-4 lg:flex'>
@@ -20,7 +17,10 @@ export default function Navbar() {
                 <MenuLink to='/projects'>Past Projects</MenuLink>
                 <MenuLink to='/team'>Our Team</MenuLink>
                 <MenuLink to='mailto:thehacklab.bocconi@gmail.com'>Contact Us</MenuLink>
-                <PrimaryButton onClick={handleApply}>Join the challenge!</PrimaryButton>
+                <div className='flex gap-2'>
+                    <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                    <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                </div>
             </div>
         </div>
     )

@@ -2,13 +2,12 @@ import React from 'react'
 import hacklabLogo from '../assets/logo.png'
 import Icon from '../components/Text/Icon'
 import Link from '../components/Links/Link'
-import SecondaryButton from '../components/Buttons/SecondaryButton'
 import MenuLink from '../components/Links/MenuLink'
 import {useApply} from '../hooks/useApply'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
 
 export default function Footer() {
-    const {handleApply}=useApply()
+    const {applyFinance,applyEntrepreneurship}=useApply()
 
     return (
         <div className='flex items-center justify-between w-full px-4 py-4 mt-8'>
@@ -25,7 +24,10 @@ export default function Footer() {
                     <MenuLink to='/projects'>Past Projects</MenuLink>
                     <MenuLink to='/team'>Our Team</MenuLink>
                     <MenuLink to='mailto:thehacklab.bocconi@gmail.com'>Contact Us</MenuLink>
-                    <PrimaryButton onClick={handleApply}>Join the challenge!</PrimaryButton>
+                    <div className='flex gap-2'>
+                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                    </div>
                 </div>
                 <div className='flex items-center justify-end gap-4 mt-4'>
                     <Link to='https://www.instagram.com/the.hack.lab/'><Icon icon='instagram' /></Link>

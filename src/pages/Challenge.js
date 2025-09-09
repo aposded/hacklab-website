@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Heading from '../components/Text/Heading'
 import Text from '../components/Text/Text'
 import Ul from '../components/Lists/Ul'
@@ -7,62 +7,120 @@ import PrimaryButton from '../components/Buttons/PrimaryButton'
 import {useApply} from '../hooks/useApply'
 
 export default function Challenge() {
-    const {handleApply}=useApply()
+    const {applyFinance,applyEntrepreneurship}=useApply()
+    const [selectedSemester,setSelectedSemester]=useState('Fall 25')
 
+    const challengeData={
+        'Fall 24': {
+            theme: 'Community',
+            tracks: [
+                {
+                    name: 'Entrepreneurship Challenge',
+                    description: 'Build innovative products and services that connect people with shared interests. Teams will identify market opportunities in community building and develop comprehensive business solutions.',
+                    details: 'Focus on creating user-centric products that solve real community building problems. Develop business models, conduct market research, and build minimum viable products that demonstrate clear value propositions.'
+                }
+            ]
+        },
+        'Spring 25': {
+            theme: 'Customer Churn',
+            tracks: [
+                {
+                    name: 'Finance Challenge',
+                    description: 'Focus on financial innovation and data-driven solutions. In Fall 2024, teams tackled customer churn analysis in financial services, developing predictive models and retention strategies.',
+                    details: 'Using advanced analytics and machine learning, teams built sophisticated models to understand customer behavior patterns, predict churn probability, and recommend actionable retention strategies for financial institutions.'
+                },
+                {
+                    name: 'Entrepreneurship Challenge',
+                    description: 'Build innovative products and services from concept to prototype. Teams identified market opportunities in customer retention and developed comprehensive business solutions.',
+                    details: 'Focus on creating user-centric products that solve real retention problems. Develop business models, conduct market research, and build minimum viable products that demonstrate clear value propositions.'
+                }
+            ]
+        },
+        'Fall 25': {
+            description: 'The Fall 2025 challenges will bring fresh perspectives to finance and entrepreneurship. Get ready for another semester of innovation across both tracks!',
+            tracks: [
+                {
+                    name: 'Markets Challenge',
+                    description: 'The Markets Challenge is a fast-paced trading competition where teams of four battle to build the best-performing portfolio. Over two high-intensity rounds, players will trade multiple asset classes while adapting to real-time shocks and surprises.',
+                    details: 'Each team will analyze data, respond to breaking news, and make quick investment decisions across six different assets. From geopolitical turmoil to sudden macroeconomic shifts, the game will test both strategy and resilience under pressure. The top performers will advance to a final round, pitching their portfolio approach to judges for the ultimate win.'
+                },
+                {
+                    name: 'Entrepreneurship Challenge',
+                    description: 'Details will be announced soon'
+                }
+            ]
+        }
+    }
+
+    const currentChallenge=challengeData[selectedSemester]
 
     return (
-        <div className='max-w-4xl mx-auto text-justify'>
-            <Heading className='w-full py-12 text-center'>The Challenge</Heading>
-            <Text className='mt-12'>In today’s market, customers have endless choices. They can easily switch from
-                one service or product to another. This constant change is a challenge for every
-                business. We invite you to explore this challenge by choosing one of two tracks.
-                Each track offers a unique way to tackle the problem of customer loss, also known
-                as churn. Join a team of 4 to 5 members and let your ideas make a real impact.
-                You can choose your own teammates or get matched based on your interests.</Text>
+        <div className='mx-auto max-w-4xl text-justify'>
+            <Heading className='py-12 w-full text-center'>The Challenge</Heading>
 
-            <Subheading className='mt-8 mb-4'>Data Track</Subheading>
-            <Text>Your mission is to uncover the hidden business opportunities behind customer
-                loss. Imagine a situation where understanding why customers leave could lead to
-                better products and improved services. You will dive into real-world information
-                about customer behaviors and feedback to see beyond the numbers. Your goal is
-                not just to predict who might leave, but to tell a story about what drives their
-                decisions.</Text>
-            <Text className='mt-4'>
-                Using a machine learning and AI approach, you will design an algorithm that
-                brings clarity to the mystery of churn. As you work through the challenge, your
-                insights will help businesses keep their customers happy and loyal.</Text>
-            <Subheading className='mt-8 mb-4'>Entrepreneur Track</Subheading>
-            <Text>Find a sector where customers often change their minds and switch services.
-                Your challenge is to design a product or service—from a mobile app to a web
-                platform—that uses creative ideas to attract and keep users.</Text>
-            <Text className='mt-4'>
-                Think about how you can use elements of fun and engagement to make your
-                solution unique. Your product should not only capture attention but also offer real
-                ways to measure and improve user satisfaction.</Text>
-
-            <Subheading className='mt-8 mb-4'>Final Deliverables</Subheading>
-            <Text><span className='font-semibold'>Final Deliverables</span>: At the end of the event, each team will present:</Text>
-            <Ul className='pl-8 mt-4 text-lg'>
-                <li><Text>A minimum viable product (MVP) or prototype.</Text></li>
-
-                <li><Text>A pitch deck that outlines your business insights and the approach you
-                    took to address churn.</Text></li>
-
-                <li><Text>A clear presentation of your process, findings, and recommendations.</Text></li>
-            </Ul>
-            <Text className='mt-4'>
-                If you love solving problems with data, exploring business challenges, or diving
-                into new tech ideas, we want you on our team. Show what you're made of and
-                make a real impact.
-            </Text>
-            <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
-                <div className='container flex flex-col items-center justify-center mx-auto'>
-                    <Heading className='text-center'>Ready to join theHacklab?</Heading>
-                    <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
-                    <PrimaryButton onClick={handleApply} className='mt-4'>Join the challenge!</PrimaryButton>
-                </div>
+            {/* Semester Selection */}
+            <div className='flex gap-4 justify-center mt-8 mb-12'>
+                {Object.keys(challengeData).map((semester) => (
+                    <button
+                        key={semester}
+                        onClick={() => setSelectedSemester(semester)}
+                        className={`px-6 py-2 rounded-lg font-semibold transition-all ${selectedSemester===semester
+                            ? 'bg-primary text-white'
+                            :'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            }`}
+                    >
+                        {semester}
+                    </button>
+                ))}
             </div>
 
+            <div className='mb-8 text-center'>
+                <Subheading className='mb-4'>{selectedSemester} Challenge</Subheading>
+                {currentChallenge.theme&&<Text className='mb-4 text-lg font-semibold text-primary'>Theme: {currentChallenge.theme}</Text>}
+            </div>
+
+            <Text className='mt-12'>Each semester, theHackLab organizes two distinct challenges that allow students to dive deep into either finance or entrepreneurship. Choose the track that aligns with your interests and career goals.</Text>
+
+            {currentChallenge.tracks.length>0? (
+                <>
+                    {currentChallenge.tracks.map((track,index) => (
+                        <div key={index}>
+                            <Subheading className='mt-8 mb-4'>{track.name}</Subheading>
+                            <Text>{track.description}</Text>
+                            <Text className='mt-4'>{track.details}</Text>
+                        </div>
+                    ))}
+                </>
+            ):(
+                <div className='flex flex-col justify-center items-center py-16'>
+                    <Text className='text-xl text-center text-gray-600'>
+                        Challenge details for {selectedSemester} will be announced soon.
+                        Join our community to be the first to know when applications open!
+                    </Text>
+                </div>
+            )}
+
+            <Subheading className='mt-8 mb-4'>Final Deliverables</Subheading>
+            <Text><span className='font-semibold'>Final Deliverables</span>: At the end of each challenge, teams will present:</Text>
+            <Ul className='pl-8 mt-4 text-lg'>
+                <li><Text><span className='font-semibold'>Finance Challenge</span>: Financial models, data analysis, and strategic recommendations with supporting documentation.</Text></li>
+                <li><Text><span className='font-semibold'>Entrepreneurship Challenge</span>: A minimum viable product (MVP) or prototype with a comprehensive business plan.</Text></li>
+                <li><Text><span className='font-semibold'>Both Tracks</span>: A pitch presentation to industry experts and potential investors.</Text></li>
+            </Ul>
+            <Text className='mt-4'>
+                Whether you're passionate about finance, entrepreneurship, or both, we want you on our team. Choose your track and make a real impact in your field of interest.
+            </Text>
+
+            <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
+                <div className='container flex flex-col justify-center items-center mx-auto'>
+                    <Heading className='text-center'>Ready to join theHacklab?</Heading>
+                    <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
+                    <div className='flex flex-wrap justify-center items-center gap-2 mt-4'>
+                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

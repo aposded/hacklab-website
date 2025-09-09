@@ -24,26 +24,20 @@ import LiviaIcon from '../assets/team/Livia.jpeg'
 export default function Team() {
 
     const teamMembers=[
-        {name: 'Francesco Arconte',role: 'Co-President',image: FrancescoIcon,linkedin: 'https://www.linkedin.com/in/francesco-arconte-02b5892a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
-        {name: 'Matteo Mendicini',role: 'Co-President',image: MatteoMIcon,linkedin: 'https://www.linkedin.com/in/matteomendicini/',department: 'The Board'},
+        {name: 'Francesco Arconte',role: 'President',image: FrancescoIcon,linkedin: 'https://www.linkedin.com/in/francesco-arconte-02b5892a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
+        {name: 'Matteo Mendicini',role: 'President',image: MatteoMIcon,linkedin: 'https://www.linkedin.com/in/matteomendicini/',department: 'The Board'},
         {name: 'Nicolas Leonardo Razzotti',role: 'Strategic Advisor',image: NicolasIcon,linkedin: 'https://www.linkedin.com/in/nicolas-leonardo-razzotti/',department: 'The Board'},
-        {name: 'Martin Patrikov',role: 'Coordination Strategist',image: MartinIcon,linkedin: 'https://www.linkedin.com/in/martin-patrikov/',department: 'The Board'},
+        {name: 'Martin Patrikov',role: 'Head of Finance Competition',image: MartinIcon,linkedin: 'https://www.linkedin.com/in/martin-patrikov/',department: 'The Board'},
         {name: 'Livia Deltombe',role: 'Head of Digital',image: LiviaIcon,linkedin: 'https://www.linkedin.com/in/livia-deltombe/',department: 'The Board'},
-        {name: 'Danilo Scholz',role: 'Co-Head of IT & Mentors',image: DaniloIcon,linkedin: 'https://www.linkedin.com/in/danilo-scholz-202234275/',department: 'The Board'},
         {name: 'Alessandro Ferraiolo',role: 'Head of Competition',image: AlessandroIcon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',role: 'Head of IT',image: ApostolosIcon,linkedin: 'https://www.linkedin.com/in/dedeloudis/',department: 'The Board'},
-        {name: 'Giacomo Cordella',role: 'Head of HR',image: JackIcon,department: 'The Board'},
         {name: 'Carlo Maria Calvanico',role: 'Coordination Strategist',image: CarloIcon,linkedin: 'https://www.linkedin.com/in/carlo-maria-calvanico-542a96292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Davide Bacchini',image: DavideIcon,role: 'External Advisor',linkedin: 'https://www.linkedin.com/in/davide-bacchini',department: 'The Board'},
-        {name: 'Alessandro Di Bernardo',role: 'External Advisor',image: AledibeIcon,linkedin: 'https://www.linkedin.com/in/alessandro-di-bernardo-9a7b15294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
+        {name: 'Alessandro Di Bernardo',role: 'Head of Entrepreneurship Competition',image: AledibeIcon,linkedin: 'https://www.linkedin.com/in/alessandro-di-bernardo-9a7b15294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Riccardo Scibetta',role: 'External Advisor',image: RiccardoIcon,linkedin: 'https://it.linkedin.com/in/riccardo-scibetta-064180239',department: 'The Board'},
-        {name: 'Danilo Scholz',image: DaniloIcon,linkedin: 'https://www.linkedin.com/in/danilo-scholz-202234275/',department: 'Mentors'},
-        {name: 'Giacomo Cordella',image: JackIcon,department: 'Mentors'},
-        {name: 'Damir Maksut',image: DamirIcon,department: 'Mentors'},
-        {name: 'Andrea Bonarrigo',image: AndreaIcon,linkedin: 'https://www.linkedin.com/in/andrea-bonarrigo/',department: 'Mentors'},
     ]
 
-    const departments=['The Board','Mentors']
+    const departments=['The Board']
 
     return (
         <div>

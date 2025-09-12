@@ -119,7 +119,7 @@ export default function Home() {
             <div className='py-8 pt-18 lg:pt-32 text-light'>
                 <div className='container flex flex-col justify-center items-center mx-auto'>
                     <Heading className='text-center'>Ready to join the theHackLab?</Heading>
-                    <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
+                    <Text className='mt-4 text-center'>Applications are now open for the Fall 2025 semester!</Text>
                     <div className='flex flex-wrap justify-center items-center gap-2 mt-4'>
                         <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
                         <PrimaryButton onClick={applyEntrepreneurship}>Apply to Startup</PrimaryButton>

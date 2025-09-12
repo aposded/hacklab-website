@@ -29,7 +29,7 @@ export default function Team() {
         {name: 'Nicolas Leonardo Razzotti',role: 'Strategic Advisor',image: NicolasIcon,linkedin: 'https://www.linkedin.com/in/nicolas-leonardo-razzotti/',department: 'The Board'},
         {name: 'Martin Patrikov',role: 'Head of Markets Competition',image: MartinIcon,linkedin: 'https://www.linkedin.com/in/martin-patrikov/',department: 'The Board'},
         {name: 'Livia Deltombe',role: 'Head of Digital',image: LiviaIcon,linkedin: 'https://www.linkedin.com/in/livia-deltombe/',department: 'The Board'},
-        {name: 'Alessandro Ferraiolo',role: 'Head of Competition',image: AlessandroIcon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'The Board'},
+        {name: 'Alessandro Ferraiolo',role: 'Head of Startup Competition',image: AlessandroIcon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',role: 'Head of IT',image: ApostolosIcon,linkedin: 'https://www.linkedin.com/in/dedeloudis/',department: 'The Board'},
         {name: 'Carlo Maria Calvanico',role: 'Coordination Strategist',image: CarloIcon,linkedin: 'https://www.linkedin.com/in/carlo-maria-calvanico-542a96292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
         {name: 'Davide Bacchini',image: DavideIcon,role: 'External Advisor',linkedin: 'https://www.linkedin.com/in/davide-bacchini',department: 'The Board'},

@@ -100,13 +100,7 @@ export default function Challenge() {
                 </div>
             )}
 
-            <Subheading className='mt-8 mb-4'>Final Deliverables</Subheading>
-            <Text><span className='font-semibold'>Final Deliverables</span>: At the end of each challenge, teams will present:</Text>
-            <Ul className='pl-8 mt-4 text-lg'>
-                <li><Text><span className='font-semibold'>Markets Challenge</span>: Financial models, data analysis, and strategic recommendations with supporting documentation.</Text></li>
-                <li><Text><span className='font-semibold'>Startup Challenge</span>: A minimum viable product (MVP) or prototype with a comprehensive business plan.</Text></li>
-                <li><Text><span className='font-semibold'>Both Tracks</span>: A pitch presentation to industry experts and potential investors.</Text></li>
-            </Ul>
+
             <Text className='mt-4'>
                 Whether you're passionate about finance, entrepreneurship, or both, we want you on our team. Choose your track and make a real impact in your field of interest.
             </Text>

@@ -96,7 +96,7 @@ export default function Home() {
                 </Ul>
                 <Text className='mt-4 text-center lg:mt-16'>Help us make theHackLab better!</Text>
                 <div className='flex justify-center items-center w-full'>
-                    <PrimaryButton onClick={() => window.location.href='TKTKTKTKTK'} className='mx-auto mt-4'>Join the Team</PrimaryButton>
+                    <PrimaryButton onClick={() => window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeb6UPwLdChXQ9I2ZWk1EiK-NYVUIgIQllauI8ZKhnRXiV-Ow/viewform?usp=header'} className='mx-auto mt-4'>Join the Team</PrimaryButton>
                 </div>
             </Subhero>
             <div className='flex relative flex-col justify-center items-center py-8 mx-auto w-full bg-opacity-40 rounded-lg lg:w-3/4 pt-18 lg:pt-32 bg-dark bg-blur text-light'>

@@ -81,7 +81,7 @@ export default function Home() {
                 </Ul>
                 <Text className='mt-4 text-center lg:mt-16'>Join us to turn ideas into impactful solutions!</Text>
                 <div className='flex flex-wrap justify-center items-center w-full gap-2 mt-4'>
-                    <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                    <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
                     <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
                 </div>
             </Subhero>

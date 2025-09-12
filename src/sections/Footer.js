@@ -25,8 +25,8 @@ export default function Footer() {
                     <MenuLink to='/team'>Our Team</MenuLink>
                     <MenuLink to='mailto:thehacklab.bocconi@gmail.com'>Contact Us</MenuLink>
                     <div className='flex gap-2'>
-                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
-                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                        <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
+                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Startup</PrimaryButton>
                     </div>
                 </div>
                 <div className='flex items-center justify-end gap-4 mt-4'>

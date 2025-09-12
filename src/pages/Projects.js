@@ -46,13 +46,13 @@ export default function Projects() {
             projects: [
                 {
                     name: 'Churn Down For What',
-                    place: 'Winner of Finance Challenge',
+                    place: 'Winner of Data Challenge',
                     logo: ChurnDownForWhatLogo,
-                    description: 'Churn Down For What is a data-driven solution that identifies at-risk telecom customers using advanced predictive modeling, cutting churn-related losses by targeting the right users with the right interventions. Combining sentiment analysis, churn probability modeling, and tailored retention strategies, it empowers companies to protect revenue and strengthen long-term customer loyalty'
+                    description: 'Churn Down For What developed precise machine learning models to predict customer churn and recommend tailored retention strategies. Their solution helped companies reduce churn-related losses by targeting the right users with the right interventions.'
                 },
                 {
                     name: 'UniMarket',
-                    place: 'Winner of Entrepreneurship Challenge',
+                    place: 'Winner of Startup Challenge',
                     logo: UniMarketLogo,
                     description: 'UniMarket is a trusted, student-verified marketplace designed to make buying and selling goods and services on campus safe, affordable, and community-driven. By leveraging university email verification, hyper-local filters, and future features like gamification and loyalty rewards, UniMarket fosters a vibrant, scalable ecosystem for students, alumni, and faculty'
                 }
@@ -73,8 +73,8 @@ export default function Projects() {
                         key={semester}
                         onClick={() => setSelectedSemester(semester)}
                         className={`px-6 py-2 rounded-lg font-semibold transition-all ${selectedSemester===semester
-                            ? 'bg-primary text-white'
-                            :'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            :'bg-primary text-white'
                             }`}
                     >
                         {semester}

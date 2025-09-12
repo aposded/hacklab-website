@@ -66,7 +66,7 @@ export default function Home() {
                 <Text className='mt-2'>
                     Each semester, we organize two distinct challenges that bring together students from diverse backgrounds to tackle real-world problems in finance and entrepreneurship. Choose the track that matches your interests and skills.</Text>
                 <Ul className='mt-4 text-lg'>
-                    <li><span className='font-semibold'>Finance Challenge</span> - Develop innovative fintech solutions, analyze market data, and create financial models that address industry challenges.</li>
+                    <li><span className='font-semibold'>Markets Challenge</span> - Develop innovative fintech solutions, analyze market data, and create financial models that address industry challenges.</li>
                     <li><span className='font-semibold'>Entrepreneurship Challenge</span> - Build startup ideas from concept to prototype, focusing on product development and business strategy.</li>
                     <li><span className='font-semibold'>Expert mentorship</span> - Get guidance from industry professionals in both finance and entrepreneurship sectors.</li>
                 </Ul>
@@ -82,7 +82,7 @@ export default function Home() {
                 <Text className='mt-4 text-center lg:mt-16'>Join us to turn ideas into impactful solutions!</Text>
                 <div className='flex flex-wrap justify-center items-center w-full gap-2 mt-4'>
                     <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
-                    <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                    <PrimaryButton onClick={applyEntrepreneurship}>Apply to Startup</PrimaryButton>
                 </div>
             </Subhero>
             <Subhero image={ph3} index={2}>
@@ -121,8 +121,8 @@ export default function Home() {
                     <Heading className='text-center'>Ready to join the theHackLab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
                     <div className='flex flex-wrap justify-center items-center gap-2 mt-4'>
-                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
-                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                        <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
+                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Startup</PrimaryButton>
                     </div>
                 </div>
             </div>

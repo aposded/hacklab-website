@@ -26,9 +26,9 @@ export default function About() {
             </div>
 
             <Subhero image={ph1} index={0}>
-                <Subheading>Finance Challenge</Subheading>
+                <Subheading>Markets Challenge</Subheading>
                 <Text className='mt-2'>
-                    Our Finance Challenge brings together students passionate about financial innovation, data analysis, and fintech solutions. Teams work on real-world financial problems using cutting-edge tools and methodologies.
+                    Our Markets Challenge brings together students passionate about financial innovation, data analysis, and fintech solutions. Teams work on real-world financial problems using cutting-edge tools and methodologies.
                 </Text>
                 <Ul className='mt-4 text-lg'>
                     <li><span className='font-semibold'>Financial Modeling</span> - Build sophisticated models to analyze market trends and investment opportunities.</li>
@@ -65,7 +65,7 @@ export default function About() {
                     <Heading className='text-center'>Ready to join theHacklab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
                     <div className='flex flex-wrap justify-center items-center gap-2 mt-4'>
-                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
+                        <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
                         <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
                     </div>
                 </div>

@@ -25,12 +25,12 @@ export default function Challenge() {
             theme: 'Customer Churn',
             tracks: [
                 {
-                    name: 'Finance Challenge',
+                    name: 'Data Challenge',
                     description: 'Focus on financial innovation and data-driven solutions. In Fall 2024, teams tackled customer churn analysis in financial services, developing predictive models and retention strategies.',
                     details: 'Using advanced analytics and machine learning, teams built sophisticated models to understand customer behavior patterns, predict churn probability, and recommend actionable retention strategies for financial institutions.'
                 },
                 {
-                    name: 'Entrepreneurship Challenge',
+                    name: 'Startup Challenge',
                     description: 'Build innovative products and services from concept to prototype. Teams identified market opportunities in customer retention and developed comprehensive business solutions.',
                     details: 'Focus on creating user-centric products that solve real retention problems. Develop business models, conduct market research, and build minimum viable products that demonstrate clear value propositions.'
                 }
@@ -65,8 +65,8 @@ export default function Challenge() {
                         key={semester}
                         onClick={() => setSelectedSemester(semester)}
                         className={`px-6 py-2 rounded-lg font-semibold transition-all ${selectedSemester===semester
-                            ? 'bg-primary text-white'
-                            :'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            ? 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                            :'bg-primary text-white'
                             }`}
                     >
                         {semester}
@@ -103,8 +103,8 @@ export default function Challenge() {
             <Subheading className='mt-8 mb-4'>Final Deliverables</Subheading>
             <Text><span className='font-semibold'>Final Deliverables</span>: At the end of each challenge, teams will present:</Text>
             <Ul className='pl-8 mt-4 text-lg'>
-                <li><Text><span className='font-semibold'>Finance Challenge</span>: Financial models, data analysis, and strategic recommendations with supporting documentation.</Text></li>
-                <li><Text><span className='font-semibold'>Entrepreneurship Challenge</span>: A minimum viable product (MVP) or prototype with a comprehensive business plan.</Text></li>
+                <li><Text><span className='font-semibold'>Markets Challenge</span>: Financial models, data analysis, and strategic recommendations with supporting documentation.</Text></li>
+                <li><Text><span className='font-semibold'>Startup Challenge</span>: A minimum viable product (MVP) or prototype with a comprehensive business plan.</Text></li>
                 <li><Text><span className='font-semibold'>Both Tracks</span>: A pitch presentation to industry experts and potential investors.</Text></li>
             </Ul>
             <Text className='mt-4'>
@@ -116,8 +116,8 @@ export default function Challenge() {
                     <Heading className='text-center'>Ready to join theHacklab?</Heading>
                     <Text className='mt-4 text-center'>Applications are now open for the Spring 2025 semester!</Text>
                     <div className='flex flex-wrap justify-center items-center gap-2 mt-4'>
-                        <PrimaryButton onClick={applyFinance}>Apply to Finance</PrimaryButton>
-                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Entrepreneurship</PrimaryButton>
+                        <PrimaryButton onClick={applyFinance}>Apply to Markets</PrimaryButton>
+                        <PrimaryButton onClick={applyEntrepreneurship}>Apply to Startup</PrimaryButton>
                     </div>
                 </div>
             </div>

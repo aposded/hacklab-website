@@ -5,6 +5,7 @@ import Ul from '../components/Lists/Ul'
 import Subheading from '../components/Text/Subheading'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
 import {useApply} from '../hooks/useApply'
+import lovableLogo from '../assets/sponsors/lovable_logo.png'
 
 export default function Challenge() {
     const {applyFinance,applyEntrepreneurship}=useApply()
@@ -49,6 +50,22 @@ export default function Challenge() {
                     description: 'Details will be announced soon'
                 }
             ]
+        },
+        'Spring 26': {
+            intro: 'Each semester, theHackLab organizes two distinct challenges that allow students to dive deep into either finance or entrepreneurship. Choose the track that aligns with your interests and career goals.',
+            tracks: [
+                {
+                    name: 'Markets Challenge',
+                    description: 'The Markets Challenge is a fast-paced trading competition where teams of four battle to build the best-performing portfolio. Over two high-intensity rounds, players will trade multiple asset classes while adapting to real-time shocks and surprises.',
+                    details: 'Each team will analyze data, respond to breaking news, and make quick investment decisions across six different assets. From geopolitical turmoil to sudden macroeconomic shifts, the game will test both strategy and resilience under pressure. The top performers will advance to a final round, pitching their portfolio approach to judges for the ultimate win.'
+                },
+                {
+                    name: 'Entrepreneurship Challenge',
+                    description: 'Develop innovative products and services that address real-world problems and create meaningful value. Teams will identify market opportunities, design impactful solutions, and build comprehensive business concepts.',
+                    details: 'Focus on creating user-centric products that solve practical problems. Participants are encouraged to explore different industries, conduct market research, design strong business models, and develop minimum viable products (MVPs) that clearly demonstrate their value proposition. This challenge has no predefined theme, allowing teams full freedom to explore ideas across any domain and pursue the problems they are most passionate about. The event is sponsored by Lovable, and teams will build their projects using the platform to rapidly prototype and develop their solutions.'
+                }
+            ],
+            closing: "Whether you're passionate about finance, entrepreneurship, technology, or innovation, this is an opportunity to collaborate, experiment, and make a real impact with your ideas."
         }
     }
 
@@ -79,7 +96,7 @@ export default function Challenge() {
                 {currentChallenge.theme&&<Text className='mb-4 text-lg font-semibold text-primary'>Theme: {currentChallenge.theme}</Text>}
             </div>
 
-            <Text className='mt-12'>Each semester, theHackLab organizes two distinct challenges that allow students to dive deep into either finance or entrepreneurship. Choose the track that aligns with your interests and career goals.</Text>
+            <Text className='mt-12'>{currentChallenge.intro || 'Each semester, theHackLab organizes two distinct challenges that allow students to dive deep into either finance or entrepreneurship. Choose the track that aligns with your interests and career goals.'}</Text>
 
             {currentChallenge.tracks.length>0? (
                 <>
@@ -87,7 +104,7 @@ export default function Challenge() {
                         <div key={index}>
                             <Subheading className='mt-8 mb-4'>{track.name}</Subheading>
                             <Text>{track.description}</Text>
-                            <Text className='mt-4'>{track.details}</Text>
+                            {track.details && <Text className='mt-4'>{track.details}</Text>}
                         </div>
                     ))}
                 </>
@@ -102,8 +119,14 @@ export default function Challenge() {
 
 
             <Text className='mt-4'>
-                Whether you're passionate about finance, entrepreneurship, or both, we want you on our team. Choose your track and make a real impact in your field of interest.
+                {currentChallenge.closing || "Whether you're passionate about finance, entrepreneurship, or both, we want you on our team. Choose your track and make a real impact in your field of interest."}
             </Text>
+
+            {selectedSemester === 'Spring 26' && (
+                <div className='flex justify-center mt-12 mb-8'>
+                    <img src={lovableLogo} alt='Lovable' className='h-12 object-contain' />
+                </div>
+            )}
 
             <div className='py-8 pt-18 lg:pt-32 bg-dark text-light'>
                 <div className='container flex flex-col justify-center items-center mx-auto'>

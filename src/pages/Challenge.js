@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
 import Heading from '../components/Text/Heading'
 import Text from '../components/Text/Text'
-import Ul from '../components/Lists/Ul'
 import Subheading from '../components/Text/Subheading'
 import PrimaryButton from '../components/Buttons/PrimaryButton'
 import {useApply} from '../hooks/useApply'
@@ -9,7 +9,7 @@ import lovableLogo from '../assets/sponsors/lovable_logo.png'
 
 export default function Challenge() {
     const {applyFinance,applyEntrepreneurship}=useApply()
-    const [selectedSemester,setSelectedSemester]=useState('Fall 25')
+    const [selectedSemester,setSelectedSemester]=useState('Spring 26')
 
     const challengeData={
         'Fall 24': {
@@ -123,8 +123,11 @@ export default function Challenge() {
             </Text>
 
             {selectedSemester === 'Spring 26' && (
-                <div className='flex justify-center mt-12 mb-8'>
+                <div className='flex flex-col items-center mt-12 mb-8'>
                     <img src={lovableLogo} alt='Lovable' className='h-12 object-contain' />
+                    <Link to='/challenge/resources' className='mt-6'>
+                        <PrimaryButton>Exclusive Resources</PrimaryButton>
+                    </Link>
                 </div>
             )}
 

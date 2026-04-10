@@ -126,7 +126,7 @@ export default function Challenge() {
                 <div className='flex flex-col items-center mt-12 mb-8'>
                     <img src={lovableLogo} alt='Lovable' className='h-12 object-contain' />
                     <Link to='/challenge/resources' className='mt-6'>
-                        <PrimaryButton>Exclusive Resources</PrimaryButton>
+                        <PrimaryButton>Resources</PrimaryButton>
                     </Link>
                 </div>
             )}

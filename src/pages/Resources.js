@@ -1,61 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Heading from '../components/Text/Heading'
 import Subheading from '../components/Text/Subheading'
 import Text from '../components/Text/Text'
-import PrimaryButton from '../components/Buttons/PrimaryButton'
-
-const RESOURCES_PASSWORD = 'StartupCompetition2026'
-const STORAGE_KEY = 'resources_unlocked'
 
 export default function Resources() {
-    const [unlocked, setUnlocked] = useState(false)
-    const [password, setPassword] = useState('')
-    const [error, setError] = useState('')
-
-    useEffect(() => {
-        setUnlocked(sessionStorage.getItem(STORAGE_KEY) === 'true')
-    }, [])
-
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setError('')
-        if (password === RESOURCES_PASSWORD) {
-            sessionStorage.setItem(STORAGE_KEY, 'true')
-            setUnlocked(true)
-        } else {
-            setError('Incorrect password. Please try again.')
-        }
-    }
-
-    if (!unlocked) {
-        return (
-            <div className="mx-auto max-w-md mt-24 px-4">
-                <Heading className="text-center mb-6">Exclusive Resources</Heading>
-                <Text className="text-center mb-6">Enter the password to access Spring 26 resources.</Text>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        placeholder="Password"
-                        className="w-full px-4 py-3 rounded-lg bg-gray-800 text-light border border-gray-600 focus:border-primary focus:outline-none"
-                        autoFocus
-                    />
-                    {error && <p className="text-red-400 text-sm">{error}</p>}
-                    <PrimaryButton type="submit" className="w-full">Access Resources</PrimaryButton>
-                </form>
-                <p className="mt-6 text-center">
-                    <Link to="/challenge" className="text-primary hover:underline">← Back to Challenge</Link>
-                </p>
-            </div>
-        )
-    }
-
     return (
         <div className="mx-auto max-w-4xl px-4 pb-16 text-justify">
             <div className="flex items-center justify-between flex-wrap gap-4 py-8">
-                <Heading>Exclusive Resources</Heading>
+                <Heading>Resources</Heading>
                 <Link to="/challenge" className="text-primary hover:underline text-lg">← Back to Challenge</Link>
             </div>
 

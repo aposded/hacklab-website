@@ -25,7 +25,7 @@ export default function Team() {
 
     const teamMembers=[
         {name: 'Michele Matozza',role: 'President',image: MicheleMatozzaIcon,linkedin: 'https://www.linkedin.com/in/michele-francesco-matozza',department: 'The Board'},
-        {name: 'Amedeo Marine',role: 'President',image: AmedeoMarineIcon,linkedin: 'https://www.linkedin.com/in/amedeo-marine/',department: 'The Board'},
+        {name: 'Amedeo Marine',role: 'President',image: AmedeoMarineIcon,linkedin: 'https://www.linkedin.com/in/amedeo-marine/',department: 'The Board',zoom: 1.2},
         {name: 'Nicolas Leonardo Razzotti',role: 'Strategic Advisor',image: NicolasIcon,linkedin: 'https://www.linkedin.com/in/nicolas-leonardo-razzotti/',department: 'The Board'},
         {name: 'Riccardo Mazzarini',role: 'Head of Markets Competition',image: RiccardoMazzariniIcon,linkedin: 'https://www.linkedin.com/in/riccardo-mazzarini/',department: 'The Board'},
         {name: 'Livia Deltombe',role: 'Head of Digital',image: LiviaIcon,linkedin: 'https://www.linkedin.com/in/livia-deltombe/',department: 'The Board'},
@@ -49,11 +49,16 @@ export default function Team() {
                             <div className='flex flex-col gap-0 justify-center items-center'>
                                 <div className='relative w-32 h-32 lg:w-48 lg:h-48'>
                                     {member.linkedin&&<Link className='absolute bottom-0 right-1 lg:right-4' to={member.linkedin}><Icon icon='linkedin' className='text-3xl' /></Link>}
-                                    <img src={member.image} alt='profile' style={{
-                                        // Slightly off center the image    
-                                        objectPosition: 'center 10%'
-
-                                    }} className='object-cover w-32 h-32 rounded-full lg:w-48 lg:h-48' />
+                                    <img
+                                        src={member.image}
+                                        alt='profile'
+                                        style={{
+                                            // Slightly off center the image
+                                            objectPosition: 'center 10%',
+                                            transform: member.zoom ? `scale(${member.zoom})` : 'scale(1)'
+                                        }}
+                                        className='object-cover w-32 h-32 rounded-full lg:w-48 lg:h-48'
+                                    />
                                 </div>
                                 <Text className='mt-4 font-semibold text-center'>{member.name}</Text>
                                 <Text className='text-sm text-center'>{member.role}</Text>
@@ -64,4 +69,6 @@ export default function Team() {
         </div>
     )
 }
+
+
 

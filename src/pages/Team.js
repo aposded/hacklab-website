@@ -14,20 +14,20 @@ import AlessandroIcon from '../assets/team/Alessandro.jpg'
 import DamirIcon from '../assets/team/Damir.jpg'
 import JackIcon from '../assets/team/Jack.jpg'
 import AndreaIcon from '../assets/team/Andrea.jpg'
-import FrancescoIcon from '../assets/team/Francesco.jpg'
+import MicheleMatozzaIcon from '../assets/team/MicheleMatozza.png'
 import CarloIcon from '../assets/team/Carlo.jpg'
-import MatteoMIcon from '../assets/team/MatteoM.jpeg'
+import AmedeoMarineIcon from '../assets/team/AmedeoMarine.png'
 import NicolasIcon from '../assets/team/Nicolas.jpeg'
-import MartinIcon from '../assets/team/Martin.jpeg'
+import RiccardoMazzariniIcon from '../assets/team/RiccardoMazzarini.png'
 import LiviaIcon from '../assets/team/Livia.jpeg'
 
 export default function Team() {
 
     const teamMembers=[
-        {name: 'Francesco Arconte',role: 'President',image: FrancescoIcon,linkedin: 'https://www.linkedin.com/in/francesco-arconte-02b5892a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',department: 'The Board'},
-        {name: 'Matteo Mendicini',role: 'President',image: MatteoMIcon,linkedin: 'https://www.linkedin.com/in/matteomendicini/',department: 'The Board'},
+        {name: 'Michele Matozza',role: 'President',image: MicheleMatozzaIcon,linkedin: 'https://www.linkedin.com/in/michele-francesco-matozza',department: 'The Board'},
+        {name: 'Amedeo Marine',role: 'President',image: AmedeoMarineIcon,linkedin: 'https://www.linkedin.com/in/amedeo-marine/',department: 'The Board'},
         {name: 'Nicolas Leonardo Razzotti',role: 'Strategic Advisor',image: NicolasIcon,linkedin: 'https://www.linkedin.com/in/nicolas-leonardo-razzotti/',department: 'The Board'},
-        {name: 'Martin Patrikov',role: 'Head of Markets Competition',image: MartinIcon,linkedin: 'https://www.linkedin.com/in/martin-patrikov/',department: 'The Board'},
+        {name: 'Riccardo Mazzarini',role: 'Head of Markets Competition',image: RiccardoMazzariniIcon,linkedin: 'https://www.linkedin.com/in/riccardo-mazzarini/',department: 'The Board'},
         {name: 'Livia Deltombe',role: 'Head of Digital',image: LiviaIcon,linkedin: 'https://www.linkedin.com/in/livia-deltombe/',department: 'The Board'},
         {name: 'Alessandro Ferraiolo',role: 'Head of Startup Competition',image: AlessandroIcon,linkedin: 'https://www.linkedin.com/in/alessandroferraiolo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',department: 'The Board'},
         {name: 'Apostolos Dedeloudis',role: 'Head of IT',image: ApostolosIcon,linkedin: 'https://www.linkedin.com/in/dedeloudis/',department: 'The Board'},
@@ -64,3 +64,4 @@ export default function Team() {
         </div>
     )
 }
+

@@ -23,6 +23,7 @@ import chapeauLogo from '../assets/sponsors/chapeau_logo.png'
 import sdaBocconiLogo from '../assets/sponsors/sda_bocconi_logo.png'
 import kymaTeamLogo from '../assets/sponsors/kyma_team.svg'
 import khHoldingsLogo from '../assets/sponsors/kh_holdings_logo.png'
+import lovableLogo from '../assets/sponsors/lovable_logo.png'
 import bg from '../assets/hl.png'
 import ph1 from '../assets/S25_PIC_5.JPG'
 import ph2 from '../assets/ph2.jpeg'
@@ -70,6 +71,14 @@ export default function Home() {
                     <li><span className='font-semibold'>Entrepreneurship Challenge</span> - Build startup ideas from concept to prototype, focusing on product development and business strategy.</li>
                     <li><span className='font-semibold'>Expert mentorship</span> - Get guidance from industry professionals in both finance and entrepreneurship sectors.</li>
                 </Ul>
+                <div className='mt-6'>
+                    <Text className='text-lg'>
+                        The Entrepreneurship Challenge is sponsored by <span className='font-semibold'>Lovable</span>. This partnership allows participants to focus more on identifying a real problem, validating their idea, and testing assumptions, while making the building and prototyping phase much faster.
+                    </Text>
+                    <div className='flex justify-center mt-4 lg:justify-start'>
+                        <img src={lovableLogo} alt='Lovable logo' className='h-10 object-contain' />
+                    </div>
+                </div>
             </Subhero>
             <Subhero reverse image={ph2} index={1}>
                 <Subheading>Why should I join the theHackLab?</Subheading>
@@ -129,3 +138,6 @@ export default function Home() {
         </div>
     )
 }
+
+
+
